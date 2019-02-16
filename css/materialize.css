@@ -2139,6 +2139,10 @@
   color: transparent !important;
 }
 
+/*
+  Custom Colours!
+*/
+
 .rose-quartz {
   background-color: #f7cac9;
 }
@@ -2154,6 +2158,47 @@
 .text-serenity {
   color: #91A8d0 !important;
 }
+
+.mauve {
+  background-color: #5E0042 !important;
+}
+
+.mauve-text {
+  color: #5E0042 !important;
+}
+
+.night {
+  background-color: #2C2233 !important;
+}
+
+.night-text {
+  color: 2C2233 !important;
+}
+
+.sky-blue {
+  background-color: #006B7F !important;
+}
+
+.sky-blue-text {
+  color: #006B7F !important;
+}
+
+.aqua {
+  background-color: #00856A !important;
+}
+
+.aqua-text {
+  color: #00856A !important;
+}
+
+.vomit {
+  background-color: #8DB500 !important;
+}
+
+.vomit-text {
+  color: #8DB500 !important;
+}
+
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
