@@ -2175,6 +2175,22 @@
   color: #2C2233 !important;
 }
 
+.night.darken-1 {
+  background-color: #221A27 !important;
+}
+
+.night-text.text-darken-1 {
+  color: #221a27 !important;
+}
+
+.night.darken-2 {
+  background-color: #18121b !important;
+}
+
+.night-text.text-darken-2 {
+  color: #18121b !important;
+}
+
 .sky-blue {
   background-color: #006B7F !important;
 }
