@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>ENGG2400 - Mechanics of Solids</title>
-  <meta name="description" content="ENGG2400 - Mechanics of SolidsStress and StrainStressStress is one of the ways to describe the intensity of the internal forces of a body. There are two type...">
+  <meta name="description" content="ENGG2400 - Mechanics of SolidsWeek 1 - Stress and StrainStressStress (denoted by ) is one of the ways to describe the intensity of the internal forces of a b...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/notes/2019/09/10/engg2400-notes.html">
@@ -50,6 +50,8 @@
         
           
         
+          
+        
       </div>
     </nav>
 
@@ -61,14 +63,37 @@
     <div class="page-content">
       <div class="wrapper">
         <h1 id="engg2400---mechanics-of-solids">ENGG2400 - Mechanics of Solids</h1>
-<h2 id="stress-and-strain"><strong>Stress and Strain</strong></h2>
+<h2 id="week-1---stress-and-strain"><strong>Week 1 - Stress and Strain</strong></h2>
 
 <h3 id="stress"><strong>Stress</strong></h3>
 
-<p>Stress is one of the ways to describe the intensity of the internal forces of a body. There are two types of stress, <code class="highlighter-rouge">normal stress</code> and <code class="highlighter-rouge">shear stress</code></p>
+<p>Stress (denoted by <script type="math/tex">\sigma</script>) is one of the ways to describe the intensity of the internal forces of a body. There are two types of stress, <em>normal stress</em> and <em>shear stress</em> both of which are measured in units of Pascals (<em>Pa</em>) or more usually Megapascals (<em>MPa</em>). Stress at an infinitesimal point is calculated from the following formula:</p>
+
+<script type="math/tex; mode=display">\begin{align*}
+    \sigma = \lim_{\Delta A \to 0} \frac{\Delta F}{\Delta A}
+\end{align*}</script>
+
+<p>Where <script type="math/tex">\Delta F</script> is a force over the internal cross-sectional area <script type="math/tex">\Delta A</script>.</p>
 
 <h4 id="normal-stress"><strong>Normal Stress</strong></h4>
+<p>Normal stress (denoted by <script type="math/tex">\sigma</script> or <script type="math/tex">\sigma_z</script>) is the stress component caused by a force perpendicular to the cross-section that we are analysing. The effect of a normal stress is usually a <em>volume change</em> (however this depends on perspective). Pure volume change only occurs if there is an equal normal stress in all directions acting on a body, otherwise some shape change will occur.</p>
 
+<p><img src="/assets/engg2400/week1normalstressimg.jpg" alt="Normal Stress Diagram" /></p>
+
+<p>It most likely that we will be calculating the average normal stress over a finite area rather than an infinitesimal area, and hence average stress would calculated from the following formula:</p>
+
+<script type="math/tex; mode=display">\begin{align*}
+    \sigma_{avg} = \frac{F}{A}
+\end{align*}</script>
+
+<p>Where <script type="math/tex">F</script> is the normal component force acting over the cross sectional area <script type="math/tex">A</script> of a body. The value of the average normal stress assumes that <script type="math/tex">F</script> is entirely uniform over the, which is usually not the case in practical scenarios.</p>
+
+<h4 id="shear-stress"><strong>Shear Stress</strong></h4>
+<p>Shear stress (sometimes denoted as <script type="math/tex">\tau</script>) is the stress component caused by a shearing force (or couple of forces) acting parallel or tangential to a surface. When working in three dimensions it’s best to break the shear force into two indpendent components, <script type="math/tex">\tau_x</script> and <script type="math/tex">\tau_y</script>. Shear stress has the effect of a <em>shape change</em>, with the body deforming into a completely new shape.</p>
+
+<p><img src="/assets/engg2400/week1shearstressimg.jpg" alt="Shear Stress Diagram" /></p>
+
+<p>Again we are likely going to be focused on average shear stress</p>
 
       </div>
     </div>
@@ -138,6 +163,7 @@
     </div>
 
   </div>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </footer>
 

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Sep 2019 12:36:20 +1000</pubDate>
-    <lastBuildDate>Sun, 29 Sep 2019 12:36:20 +1000</lastBuildDate>
+    <pubDate>Sun, 29 Sep 2019 21:55:04 +1000</pubDate>
+    <lastBuildDate>Sun, 29 Sep 2019 21:55:04 +1000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -38,14 +38,37 @@ The pump will consist of 5 major componenents:&lt;/p&gt;
       <item>
         <title>ENGG2400 - Mechanics of Solids</title>
         <description>&lt;h1 id=&quot;engg2400---mechanics-of-solids&quot;&gt;ENGG2400 - Mechanics of Solids&lt;/h1&gt;
-&lt;h2 id=&quot;stress-and-strain&quot;&gt;&lt;strong&gt;Stress and Strain&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;week-1---stress-and-strain&quot;&gt;&lt;strong&gt;Week 1 - Stress and Strain&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;h3 id=&quot;stress&quot;&gt;&lt;strong&gt;Stress&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;Stress is one of the ways to describe the intensity of the internal forces of a body. There are two types of stress, &lt;code class=&quot;highlighter-rouge&quot;&gt;normal stress&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;shear stress&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Stress (denoted by &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;) is one of the ways to describe the intensity of the internal forces of a body. There are two types of stress, &lt;em&gt;normal stress&lt;/em&gt; and &lt;em&gt;shear stress&lt;/em&gt; both of which are measured in units of Pascals (&lt;em&gt;Pa&lt;/em&gt;) or more usually Megapascals (&lt;em&gt;MPa&lt;/em&gt;). Stress at an infinitesimal point is calculated from the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \sigma = \lim_{\Delta A \to 0} \frac{\Delta F}{\Delta A}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;\Delta F&lt;/script&gt; is a force over the internal cross-sectional area &lt;script type=&quot;math/tex&quot;&gt;\Delta A&lt;/script&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;normal-stress&quot;&gt;&lt;strong&gt;Normal Stress&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Normal stress (denoted by &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;\sigma_z&lt;/script&gt;) is the stress component caused by a force perpendicular to the cross-section that we are analysing. The effect of a normal stress is usually a &lt;em&gt;volume change&lt;/em&gt; (however this depends on perspective). Pure volume change only occurs if there is an equal normal stress in all directions acting on a body, otherwise some shape change will occur.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1normalstressimg.jpg&quot; alt=&quot;Normal Stress Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It most likely that we will be calculating the average normal stress over a finite area rather than an infinitesimal area, and hence average stress would calculated from the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \sigma_{avg} = \frac{F}{A}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt; is the normal component force acting over the cross sectional area &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; of a body. The value of the average normal stress assumes that &lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt; is entirely uniform over the, which is usually not the case in practical scenarios.&lt;/p&gt;
+
+&lt;h4 id=&quot;shear-stress&quot;&gt;&lt;strong&gt;Shear Stress&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Shear stress (sometimes denoted as &lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt;) is the stress component caused by a shearing force (or couple of forces) acting parallel or tangential to a surface. When working in three dimensions it’s best to break the shear force into two indpendent components, &lt;script type=&quot;math/tex&quot;&gt;\tau_x&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\tau_y&lt;/script&gt;. Shear stress has the effect of a &lt;em&gt;shape change&lt;/em&gt;, with the body deforming into a completely new shape.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1shearstressimg.jpg&quot; alt=&quot;Shear Stress Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Again we are likely going to be focused on average shear stress&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
         <link>http://localhost:4000/notes/2019/09/10/engg2400-notes.html</link>
