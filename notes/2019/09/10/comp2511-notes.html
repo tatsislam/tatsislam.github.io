@@ -10,11 +10,10 @@
   <meta name="description" content="COMP2511 Notes1. Object Oriented Introduction1.1 JavaJava is a multiplatform development tool that is developed by Oracle. Some important features of the Jav...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/notes/2019/09/10/comp2511-notes.html">
-  <link rel="alternate" type="application/rss+xml" title="tatsislam.github.io" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="https://tatsislam.github.io//notes/2019/09/10/comp2511-notes.html">
+  <link rel="alternate" type="application/rss+xml" title="tatsislam.github.io" href="https://tatsislam.github.io//feed.xml">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</script>
 </head>
 
 
@@ -383,9 +382,23 @@ Interfaces can also be extended by <strong>sub-interfaces</strong>. A sub-interf
 
 <h3 id="32-state-pattern">3.2 <strong>State Pattern</strong></h3>
 
-<h3 id="321-problem">3.2.1 <strong>Problem</strong></h3>
+<h4 id="321-problem">3.2.1 <strong>Problem</strong></h4>
 
-<p>When we have an object that needs to change its behaviour based on its current state</p>
+<p>When we have an object that needs to change its behaviour based on its current state. If we need to continue to add behaviours and states to the class, the class can become too large or have too many responsibilities, especially if the behaviours are unrelated.</p>
+
+<h4 id="322-solution">3.2.2 <strong>Solution</strong></h4>
+
+<p>We can extract the behaviours and states into separate classes which can be better organised and prevent us from making large classes</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BatteryMode</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">State</span> <span class="n">state</span><span class="o">;</span>
+
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">State</span> <span class="o">{</span>
+    
+<span class="o">}</span>
+</code></pre></div></div>
 
       </div>
     </div>
