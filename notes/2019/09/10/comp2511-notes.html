@@ -7,11 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>COMP2511 - Object Oriented Design</title>
-  <meta name="description" content="COMP2511 NotesJavaJava is a multiplatform development tool that is developed by Oracle. Some important features of the Java environment are as listed:  Simpl...">
+  <meta name="description" content="COMP2511 Notes1. Object Oriented Introduction1.1 JavaJava is a multiplatform development tool that is developed by Oracle. Some important features of the Jav...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/notes/2019/09/10/comp2511-notes.html">
   <link rel="alternate" type="application/rss+xml" title="tatsislam.github.io" href="http://localhost:4000/feed.xml">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</script>
 </head>
 
 
@@ -33,6 +36,7 @@
       </a>
 
       <div class="trigger">
+        <a class="page-link" href="/">Home</a>
         
           
           <a class="page-link" href="/about/">About Me</a>
@@ -62,9 +66,11 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h1 id="comp2511-notes">COMP2511 Notes</h1>
+        <h1 id="comp2511-notes"><strong>COMP2511 Notes</strong></h1>
 
-<h2 id="java">Java</h2>
+<h2 id="1-object-oriented-introduction">1. <strong>Object Oriented Introduction</strong></h2>
+
+<h3 id="11-java">1.1 <strong>Java</strong></h3>
 
 <p>Java is a multiplatform development tool that is developed by Oracle. Some important features of the Java environment are as listed:</p>
 <ul>
@@ -76,8 +82,310 @@
   <li>Fast</li>
 </ul>
 
-<h2 id="oo-basics">OO Basics</h2>
+<h3 id="12-what-is-oo">1.2 <strong>What is OO?</strong></h3>
 
+<p>The object oriented paradigm is design to break up a large program into a series of <strong>classes</strong> that each have an individual responsbiility in that program. A class is similar to an abstract data type in that it has associated variables (<strong>properties</strong>) and functions (<strong>methods</strong>) that are defined and enclosed with the class declaration.
+The Java language is designed in such a way that <em>everything</em> is a class, and it comes with a massive host of library classes that can do pretty much everything. So to do something like printing to stdout, you would invoke the function like this:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nf">HelloWorldProgram</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// Declaring a method (the main method)</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="n">Hello</span> <span class="n">World</span><span class="o">!);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>In designing a class consider the following:</p>
+<ul>
+  <li>Always tro to keep data private (local)</li>
+  <li>Consider different ways an object may be created</li>
+  <li>Always initialise data</li>
+  <li>If the object is no longer in use, free up all the associated resources</li>
+  <li>Classes should have a single purpose or responsibility</li>
+  <li>Break up classes with too many responsibilities</li>
+  <li>Factor out common attributes and take advantage of inheritance and polymorphism</li>
+</ul>
+
+<h3 id="13-inheritance">1.3 <strong>Inheritance</strong></h3>
+
+<p><strong>Inheritance</strong> is a form of software reusability in which new classes are created from the existing classes by absorbing their attributes and behaviours. So instead of having to define a completely separate new class, we can more easily define a <strong>subclass</strong> from a <strong>superclass</strong>. We can also further extend or modify our subclass if needed, hence normally subclasses have more features than their superclasses. Subclasses in Java can only extend one superclass at a time, this is called <em>single inheritance</em>, some languages allow for multiple inheritance.</p>
+
+<p><strong>Interfaces</strong> are a clean way to define purely abstract and undefined classes. They have no properties or method bodies. Abstract and concrete classes can implement more than one interface at a time, and is a way that Java gets around single inheritance.
+Interfaces can also be extended by <strong>sub-interfaces</strong>. A sub-interface inherits all the methods and constants of the super-interface. Interfaces can extend more than one interface at a time, allowing for multiple inheritance of interfaces.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">SuperClass</span> <span class="o">{</span>
+    <span class="c1">// This is the parent class</span>
+    <span class="c1">// Abstract class cannot be instantioted</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doThing</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="mi">1</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SubClass</span> <span class="kd">extends</span> <span class="n">SuperClass</span> <span class="o">{</span>
+    <span class="c1">// This is the child class and inherits properties and methods from the parent</span>
+    <span class="c1">// This can be instantiated</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doThing</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="mi">2</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Foo</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">fooBar</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">IOException</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Bar</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">fooBar</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">FileNotFoundException</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="kd">implements</span> <span class="n">Bar</span><span class="o">,</span> <span class="n">Foo</span> <span class="o">{</span>
+    <span class="c1">// The interface specified at the end is given higher precedence.</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fooBar</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">IOException</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass.</p>
+
+<h3 id="14-polymorphism">1.4 <strong>Polymorphism</strong></h3>
+
+<p>Polymorphism captures the ability of an object to take on different forms (<em>types</em>). Any object that can pass more than one “is-a” test is considered polymorphic. Technically all objects are polymorphic as every class implicitly extends the Object class, this is the only class without a superclass.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Vegetable</span> <span class="o">{}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Food</span> <span class="o">{}</span>
+
+<span class="c1">// Polymorphic since Broccoli is-a Food, is-a vegetable, is-a object.</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Broccoli</span> <span class="kd">extends</span> <span class="n">Food</span> <span class="kd">implements</span> <span class="n">Vegetable</span> <span class="o">{}</span>
+</code></pre></div></div>
+
+<p>A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass. This allows us to treat a family of subclasses as the parent class, while the subclasses still retain their individual behaviour. However we can only access methods that are specified or inherted from the superclass, access to the subclasses individual methods are restricted.</p>
+
+<h3 id="15-generics">1.5 <strong>Generics</strong></h3>
+<p>TBC</p>
+
+<h2 id="2-object-oriented-design-principles">2. <strong>Object Oriented Design Principles</strong></h2>
+
+<p>Building good software is all about:</p>
+<ul>
+  <li>Making sure your software does what it’s supposed to</li>
+  <li>Ensuring the system is flexible and extensible to acoomodate changes in requirements</li>
+  <li>Aiming for a maintainable, reusable and extensible design</li>
+  <li>Software should improve with extensions, not worsen</li>
+</ul>
+
+<h3 id="21-design-smells">2.1 <strong>Design Smells</strong></h3>
+
+<p>A <strong>design smell</strong> is a symptom of poor design, and is often caused by violation of key design principles which makes the code harder to extend and easily maintain.</p>
+
+<ul>
+  <li><strong>Rigidity</strong>
+    <ul>
+      <li>Tendency for the software being too difficult to change even in simple ways</li>
+      <li>A single change causes a cascard of changes to other dependent modules</li>
+      <li>High coupling</li>
+    </ul>
+  </li>
+  <li><strong>Fragility</strong>
+    <ul>
+      <li>Tendency of the software to break in many places when a single change is made</li>
+      <li>High coupling</li>
+    </ul>
+  </li>
+  <li><strong>Immobility</strong>
+    <ul>
+      <li>Design is hard to reuse</li>
+      <li>Design has parts that could be useful to other systems, but effort needed disentangle the system is too high</li>
+    </ul>
+  </li>
+  <li><strong>Viscosity</strong>
+    <ul>
+      <li>Software Viscosity - changes are easier to implement through ‘hacks’ over ‘design preserving methods’</li>
+      <li>Environment Viscosity - development environment is slow and in-efficient</li>
+    </ul>
+  </li>
+  <li><strong>Opacity</strong>
+    <ul>
+      <li>Tendency of a module to be difficult to understand</li>
+      <li>Code must be written in a clear and readable manner</li>
+    </ul>
+  </li>
+  <li><strong>Needless Complexity</strong>
+    <ul>
+      <li>Contains constructs that are not currently useful</li>
+      <li>Trying to develop ahead of requirements</li>
+    </ul>
+  </li>
+  <li><strong>Needless repitition</strong>
+    <ul>
+      <li>Design contains repeated structures that should be unified under a single abstractio</li>
+      <li>Bugs found in repearted units have to fixed in every repition</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="22-coupling-and-cohesion">2.2 <strong>Coupling and Cohesion</strong></h3>
+
+<p>The design quality of software is characterised by <strong>coupling</strong> and <strong>cohesion</strong>. Good software aims for loose coupling and high cohesion.</p>
+
+<p>Coupling is defined as the degree of interdependence between components or classes, or the extend to which a class knows about other classes. High coupling occurs when a class <code class="highlighter-rouge">A</code> knows too much about another class <code class="highlighter-rouge">B</code>, and <code class="highlighter-rouge">A</code> depends to much on the <code class="highlighter-rouge">B</code>’s internal workings, and is hence affected by internal changes to <code class="highlighter-rouge">B</code>. This is not a maintainable system, and should be aimed to be more loosely coupled, where <code class="highlighter-rouge">A</code> depends on <code class="highlighter-rouge">B</code>’s external structure but not the internal workings. <em>Zero coupled</em> classes aren’t really useful, as classes need to interact with each other, so we should aim for loose coupling.</p>
+
+<p>Cohesion is defined as the the degree to which all the elements of a component, class, or module work together as a functional unit. This is about making discrete parts of your structure have a unified purpose by separating out responsibility.</p>
+
+<h3 id="23-solid-principles">2.3 <strong>SOLID Principles</strong></h3>
+
+<ul>
+  <li><strong>Single responsibility principle</strong>: A class should only have a single responsibility</li>
+  <li><strong>Open-closed principle</strong>: Software entities should be open for extension, but closed for modification</li>
+  <li><strong>Liskov substitution principle</strong>: Objects in a program should be replaceable with instances of their subtypes without alterting the correctness of that program</li>
+  <li><strong>Interface segregation principle</strong>: Many client-specific interfaces are better than one general-purpose interface</li>
+  <li><strong>Dependency inversion principle</strong>: One should “depend upon abstractions, not concretions”</li>
+</ul>
+
+<h3 id="24-design-principles">2.4 <strong>Design Principles</strong></h3>
+
+<ul>
+  <li><strong>Law of Demeter</strong> (Talk only to your friends):
+    <ol>
+      <li>A method <code class="highlighter-rouge">m</code> in an object <code class="highlighter-rouge">o</code> can call on any other method within <code class="highlighter-rouge">o</code> itself</li>
+      <li>A method <code class="highlighter-rouge">m</code> in and object <code class="highlighter-rouge">o</code> can call on any methods of paramers apssed to the method <code class="highlighter-rouge">m</code></li>
+      <li>A method <code class="highlighter-rouge">m</code> can call a method <code class="highlighter-rouge">n</code> of another object, if that object is instantiated within the method <code class="highlighter-rouge">m</code></li>
+      <li>Any method <code class="highlighter-rouge">m</code> in an object <code class="highlighter-rouge">o</code> can call on any methods of any type of object that is a direct component of <code class="highlighter-rouge">o</code></li>
+    </ol>
+  </li>
+  <li><strong>Composition over Inheritance</strong>:
+    <ul>
+      <li>Delegation - delegate the functionality to another class</li>
+      <li>Composition - reuse behaviour using one or more classes with composition</li>
+    </ul>
+  </li>
+  <li><strong>Method Overriding Rules</strong>:
+    <ol>
+      <li>The argument list should be exactly the same as the overridden method</li>
+      <li>The acces level cannot be more restrictive than the overridden method</li>
+      <li>A method declared <code class="highlighter-rouge">final</code> cannot be overridden</li>
+      <li>Constructors cannot be overridden</li>
+      <li>The return type in the overridden method should be the same or a sub-type of the return type defined in the super-class</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="25-code-smells">2.5 <strong>Code Smells</strong></h3>
+
+<ul>
+  <li>Duplicated code
+    <ul>
+      <li>Same code structure in more than one place</li>
+      <li>Same expression in sibling classes</li>
+    </ul>
+  </li>
+  <li>Long method</li>
+  <li>Large class
+    <ul>
+      <li>Too many instance variables or properties</li>
+    </ul>
+  </li>
+  <li>Long parameter list</li>
+  <li>Divergent change
+    <ul>
+      <li>Class is commonly changed in different ways for different reasons</li>
+    </ul>
+  </li>
+  <li>Shotgun surgery
+    <ul>
+      <li>Make a lot of little changes to a lot of different classes</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="26-refactoring-methods">2.6 Refactoring Methods</h3>
+
+<ul>
+  <li>Extract method:
+    <ul>
+      <li>Find a logical clumps of code in a long or complex method and place into separate methods</li>
+    </ul>
+  </li>
+  <li>Rename variables
+    <ul>
+      <li>Good code should communicate what it is doing clearly</li>
+    </ul>
+  </li>
+  <li>Move method
+    <ul>
+      <li>Method should be on the object whose data it uses</li>
+    </ul>
+  </li>
+  <li>Replace conditional logic with Polymorphism
+    <ul>
+      <li>Switch statements should not check types</li>
+      <li>Move individual behaviour into the subclasses</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-behavioural-design-patterns">3. <strong>Behavioural Design Patterns</strong></h2>
+
+<h3 id="31-strategy-design-pattern">3.1 <strong>Strategy Design Pattern</strong></h3>
+
+<h4 id="311-problem">3.1.1 <strong>Problem</strong></h4>
+<p>When we need a class to be able to have a method have multiple behaviours (and add behaviours later down the line). For example having a class <code class="highlighter-rouge">Duck</code> which has a method <code class="highlighter-rouge">quack</code>, however we want to extend this class to allow us to implement a <code class="highlighter-rouge">RubberDuck</code> which instead of using <code class="highlighter-rouge">quack</code>, we want it to <code class="highlighter-rouge">sqeak</code>. We can do this by creating a <code class="highlighter-rouge">RubberDuck</code> subclass that extends from duck and overrides the method, however if we to continue to add more duck subclasses and continue to override methods, it’s not effiecient.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Duck</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">colour</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">quack</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Quacking behaviour</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">RubberDuck</span> <span class="kd">extends</span> <span class="n">Duck</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">quack</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Squeaking behaviour</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Mallard</span> <span class="kd">extends</span> <span class="n">Duck</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">quack</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Yelling behaviour</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<h4 id="312-solution">3.1.2 <strong>Solution</strong></h4>
+
+<p>To avoid this issue with creating many subclasses that override the same functions we can instead <em>encapsulate the differences</em> into a separate class that controls the behaviour. This includes the added benefit of decoupling the behaviour from the user class, which allows the strategy method to be extendable without any modification to any code.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Duck</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">colour</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">NoiseStrategy</span> <span class="n">noise</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">makeNoise</span><span class="o">()</span> <span class="o">{</span><span class="n">noise</span><span class="o">.</span><span class="na">makeNoise</span><span class="o">()}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">NoiseStrategy</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">makeNoise</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Quack</span> <span class="kd">extends</span> <span class="n">NoiseStrategy</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">makeNoise</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Quacking behaviour</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Squeak</span> <span class="kd">extends</span> <span class="n">NoiseStrategy</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">makeNoise</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Squeaking behaviour</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Yell</span> <span class="kd">extends</span> <span class="n">NoiseStrategy</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">makeNoise</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Yelling behaviour</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="32-state-pattern">3.2 <strong>State Pattern</strong></h3>
+
+<h3 id="321-problem">3.2.1 <strong>Problem</strong></h3>
+
+<p>When we have an object that needs to change its behaviour based on its current state</p>
 
       </div>
     </div>

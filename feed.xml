@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Sep 2019 21:55:04 +1000</pubDate>
-    <lastBuildDate>Sun, 29 Sep 2019 21:55:04 +1000</lastBuildDate>
+    <pubDate>Sun, 01 Dec 2019 15:03:12 +1100</pubDate>
+    <lastBuildDate>Sun, 01 Dec 2019 15:03:12 +1100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -38,9 +38,9 @@ The pump will consist of 5 major componenents:&lt;/p&gt;
       <item>
         <title>ENGG2400 - Mechanics of Solids</title>
         <description>&lt;h1 id=&quot;engg2400---mechanics-of-solids&quot;&gt;ENGG2400 - Mechanics of Solids&lt;/h1&gt;
-&lt;h2 id=&quot;week-1---stress-and-strain&quot;&gt;&lt;strong&gt;Week 1 - Stress and Strain&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;week1&quot;&gt;1. &lt;strong&gt;Week 1 - Stress and Strain&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;h3 id=&quot;stress&quot;&gt;&lt;strong&gt;Stress&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;11-stress&quot;&gt;1.1 &lt;strong&gt;Stress&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Stress (denoted by &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;) is one of the ways to describe the intensity of the internal forces of a body. There are two types of stress, &lt;em&gt;normal stress&lt;/em&gt; and &lt;em&gt;shear stress&lt;/em&gt; both of which are measured in units of Pascals (&lt;em&gt;Pa&lt;/em&gt;) or more usually Megapascals (&lt;em&gt;MPa&lt;/em&gt;). Stress at an infinitesimal point is calculated from the following formula:&lt;/p&gt;
 
@@ -50,8 +50,8 @@ The pump will consist of 5 major componenents:&lt;/p&gt;
 
 &lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;\Delta F&lt;/script&gt; is a force over the internal cross-sectional area &lt;script type=&quot;math/tex&quot;&gt;\Delta A&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;normal-stress&quot;&gt;&lt;strong&gt;Normal Stress&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Normal stress (denoted by &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;\sigma_z&lt;/script&gt;) is the stress component caused by a force perpendicular to the cross-section that we are analysing. The effect of a normal stress is usually a &lt;em&gt;volume change&lt;/em&gt; (however this depends on perspective). Pure volume change only occurs if there is an equal normal stress in all directions acting on a body, otherwise some shape change will occur.&lt;/p&gt;
+&lt;h4 id=&quot;111-normal-stress&quot;&gt;1.1.1 &lt;strong&gt;Normal Stress&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Normal stress&lt;/em&gt; (denoted by &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;\sigma_z&lt;/script&gt;) is the stress component caused by a force perpendicular to the cross-section that we are analysing. The effect of a normal stress is usually a &lt;em&gt;volume change&lt;/em&gt; (however this depends on perspective). Pure volume change only occurs if there is an equal normal stress in all directions acting on a body, otherwise some shape change will occur.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1normalstressimg.jpg&quot; alt=&quot;Normal Stress Diagram&quot; /&gt;&lt;/p&gt;
 
@@ -63,12 +63,103 @@ The pump will consist of 5 major componenents:&lt;/p&gt;
 
 &lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt; is the normal component force acting over the cross sectional area &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; of a body. The value of the average normal stress assumes that &lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt; is entirely uniform over the, which is usually not the case in practical scenarios.&lt;/p&gt;
 
-&lt;h4 id=&quot;shear-stress&quot;&gt;&lt;strong&gt;Shear Stress&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Shear stress (sometimes denoted as &lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt;) is the stress component caused by a shearing force (or couple of forces) acting parallel or tangential to a surface. When working in three dimensions it’s best to break the shear force into two indpendent components, &lt;script type=&quot;math/tex&quot;&gt;\tau_x&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\tau_y&lt;/script&gt;. Shear stress has the effect of a &lt;em&gt;shape change&lt;/em&gt;, with the body deforming into a completely new shape.&lt;/p&gt;
+&lt;h4 id=&quot;112-shear-stress&quot;&gt;1.1.2 &lt;strong&gt;Shear Stress&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Shear stress&lt;/em&gt; (sometimes denoted as &lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt;) is the stress component caused by a shearing force (or couple of forces) acting parallel or tangential to a surface. When working in three dimensions it’s best to break the shear force into two independent components, &lt;script type=&quot;math/tex&quot;&gt;\tau_x&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\tau_y&lt;/script&gt;. Shear stress has the effect of a &lt;em&gt;shape change&lt;/em&gt;, with the body deforming into a completely new shape.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1shearstressimg.jpg&quot; alt=&quot;Shear Stress Diagram&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Again we are likely going to be focused on average shear stress&lt;/p&gt;
+&lt;p&gt;Again we are likely going to be focused on average shear stress which can be calculated using the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \tau_{avg} = \frac{V}{A}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt; is the total tangential force (in one co-ordinate direction) and &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; is the area of contact between the shearing bodies.&lt;/p&gt;
+
+&lt;h4 id=&quot;113-3-dimensional-stresses&quot;&gt;1.1.3 &lt;strong&gt;3 Dimensional Stresses&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;In most general cases of 3 dimensions, there may be a maximum of 6 components of stresses, being 3 normal stresses &lt;script type=&quot;math/tex&quot;&gt;\sigma_{xx}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\sigma_{yy}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\sigma_{zz}&lt;/script&gt;, and 3 shear stresses &lt;script type=&quot;math/tex&quot;&gt;\tau_{xy}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\tau_{yz}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\tau_{zx}&lt;/script&gt;. These components together make up the &lt;em&gt;stress tensor&lt;/em&gt;, a 3*3 symmetric matrix.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align*}
+    \sigma  = 
+    \left[ {\begin{array}{ccc}
+        \sigma_{xx} &amp;   \tau_{xy}       &amp;   \tau_{xz} \\
+        \tau_{yx}   &amp;   \sigma_{yy}    &amp;   \tau_{yz} \\
+        \tau_{zx}   &amp;   \tau_{zy}       &amp;   \sigma_{zz}\\
+        \end{array} } \right]
+\end{align*} %]]&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;114-bearing-stress&quot;&gt;1.1.4 &lt;strong&gt;Bearing Stress&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Bearing stress&lt;/em&gt; is a compressive stress that acts between two bodies when one body is pushed against another. Similar to internal normal stress in that the force is acting perpendicular to the surface area, however the surface area itself is the contact area between the two bodies as in shear stress.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1bearingstressimg.jpg&quot; alt=&quot;Bearing Stress Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bearing stress itself is calculated from the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \sigma_{b} = \frac{F_{b}}{A_{b}}
+\end{align*}&lt;/script&gt;
+
+&lt;h3 id=&quot;12-strain&quot;&gt;1.2 &lt;strong&gt;Strain&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A &lt;em&gt;strain&lt;/em&gt; is defined as the ratio of the deformation to the original size of abody (intensity of deformation essentially). There are two types of strains that correspond to our two main stresses:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Normal strain &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Shear strain &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt;&lt;/strong&gt;
+Strains are dinmensionless but are often given units of m/m, mm/mm or &lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt;.
+In practical engineering strains are much easier to measrue than stress due to the fact that we are measuring phsyical deformations.
+As a part of this course, definitions are based on infinitesimal displacements and deformations associated with shear are usually neglected.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;121-average-axial-strain&quot;&gt;1.2.1 &lt;strong&gt;Average Axial Strain&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;em&gt;average axial strain&lt;/em&gt; (or normal strain) is assuming the strain is uniform through the cross-section, which in turn means that the deformation is equal across the body. Average axial strain over a length can be calculated using the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \epsilon_{avg} = \frac{e}{L}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt; is the change in length and &lt;script type=&quot;math/tex&quot;&gt;L&lt;/script&gt; is the original length of the body.&lt;/p&gt;
+
+&lt;h4 id=&quot;122-shear-strain&quot;&gt;1.2.2 &lt;strong&gt;Shear Strain&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;em&gt;shear strain&lt;/em&gt; is a measure of the angle of distortion and is usually denoted by &lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\engg2400\week1shearstrainimg.jpg&quot; alt=&quot;Shear Strain Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This angle is calculated through simple trigonometry:&lt;/p&gt;
+
+&lt;h3 id=&quot;13-relationsip-between-strain-and-stress&quot;&gt;1.3 &lt;strong&gt;Relationsip between strain and stress&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Due to the fact that direct measurement of strain is much easier than measuring stress, through the use of material properties we develop a relationship between stress and strain. This content is covered in Week 3 content&lt;/p&gt;
+
+&lt;h2 id=&quot;131&quot;&gt;1.3.1&lt;/h2&gt;
+
+&lt;h2 id=&quot;2-week-2---mechanical-properties&quot;&gt;2. &lt;strong&gt;Week 2 - Mechanical Properties&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;21-stress-vs-strain-diagrams&quot;&gt;2.1 &lt;strong&gt;Stress vs Strain Diagrams&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\engg2400\week2stressstrainimg.jpg&quot; alt=&quot;Stress Strain Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A stress-strain diagram shows us the behaviour of a material’s shape deformation, as it moves through elastic to plastic deformation and finally to necking and fracturing. The elastic behaviour of the material is informed by the linear relationship between the stress and strain. The ratio of the this region describes the &lt;em&gt;Elastic Modulus&lt;/em&gt; or &lt;em&gt;Young’s Modulus&lt;/em&gt; (&lt;em&gt;E&lt;/em&gt;):&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    E = \frac{\sigma}{\epsilon}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;This equation is also a materially intrinsic version of Hooke’s Law.&lt;/p&gt;
+
+&lt;h3 id=&quot;22-poissons-ratio&quot;&gt;2.2 &lt;strong&gt;Poisson’s Ratio&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The ratio between the width and the depth change of an element undergoing a compressive stress is a useful material property and known as &lt;em&gt;Poisson’s Ratio&lt;/em&gt; (&lt;em&gt;v&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;23&quot;&gt;2.3&lt;/h3&gt;
+
+&lt;h2 id=&quot;3-week-3---axial-loading&quot;&gt;3. &lt;strong&gt;Week 3 - Axial Loading&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;4-week-4---torsion&quot;&gt;4. &lt;strong&gt;Week 4 - Torsion&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;5-week-5---beam-bending&quot;&gt;5. &lt;strong&gt;Week 5 - Beam Bending&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;6-week-6---transverse-shear&quot;&gt;6. &lt;strong&gt;Week 6 - Transverse Shear&lt;/strong&gt;&lt;/h2&gt;
 </description>
         <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
         <link>http://localhost:4000/notes/2019/09/10/engg2400-notes.html</link>
@@ -81,9 +172,11 @@ The pump will consist of 5 major componenents:&lt;/p&gt;
     
       <item>
         <title>COMP2511 - Object Oriented Design</title>
-        <description>&lt;h1 id=&quot;comp2511-notes&quot;&gt;COMP2511 Notes&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;comp2511-notes&quot;&gt;&lt;strong&gt;COMP2511 Notes&lt;/strong&gt;&lt;/h1&gt;
 
-&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
+&lt;h2 id=&quot;1-object-oriented-introduction&quot;&gt;1. &lt;strong&gt;Object Oriented Introduction&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-java&quot;&gt;1.1 &lt;strong&gt;Java&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Java is a multiplatform development tool that is developed by Oracle. Some important features of the Java environment are as listed:&lt;/p&gt;
 &lt;ul&gt;
@@ -95,8 +188,310 @@ The pump will consist of 5 major componenents:&lt;/p&gt;
   &lt;li&gt;Fast&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;oo-basics&quot;&gt;OO Basics&lt;/h2&gt;
+&lt;h3 id=&quot;12-what-is-oo&quot;&gt;1.2 &lt;strong&gt;What is OO?&lt;/strong&gt;&lt;/h3&gt;
 
+&lt;p&gt;The object oriented paradigm is design to break up a large program into a series of &lt;strong&gt;classes&lt;/strong&gt; that each have an individual responsbiility in that program. A class is similar to an abstract data type in that it has associated variables (&lt;strong&gt;properties&lt;/strong&gt;) and functions (&lt;strong&gt;methods&lt;/strong&gt;) that are defined and enclosed with the class declaration.
+The Java language is designed in such a way that &lt;em&gt;everything&lt;/em&gt; is a class, and it comes with a massive host of library classes that can do pretty much everything. So to do something like printing to stdout, you would invoke the function like this:&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HelloWorldProgram&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Declaring a method (the main method)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;World&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In designing a class consider the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Always tro to keep data private (local)&lt;/li&gt;
+  &lt;li&gt;Consider different ways an object may be created&lt;/li&gt;
+  &lt;li&gt;Always initialise data&lt;/li&gt;
+  &lt;li&gt;If the object is no longer in use, free up all the associated resources&lt;/li&gt;
+  &lt;li&gt;Classes should have a single purpose or responsibility&lt;/li&gt;
+  &lt;li&gt;Break up classes with too many responsibilities&lt;/li&gt;
+  &lt;li&gt;Factor out common attributes and take advantage of inheritance and polymorphism&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-inheritance&quot;&gt;1.3 &lt;strong&gt;Inheritance&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Inheritance&lt;/strong&gt; is a form of software reusability in which new classes are created from the existing classes by absorbing their attributes and behaviours. So instead of having to define a completely separate new class, we can more easily define a &lt;strong&gt;subclass&lt;/strong&gt; from a &lt;strong&gt;superclass&lt;/strong&gt;. We can also further extend or modify our subclass if needed, hence normally subclasses have more features than their superclasses. Subclasses in Java can only extend one superclass at a time, this is called &lt;em&gt;single inheritance&lt;/em&gt;, some languages allow for multiple inheritance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interfaces&lt;/strong&gt; are a clean way to define purely abstract and undefined classes. They have no properties or method bodies. Abstract and concrete classes can implement more than one interface at a time, and is a way that Java gets around single inheritance.
+Interfaces can also be extended by &lt;strong&gt;sub-interfaces&lt;/strong&gt;. A sub-interface inherits all the methods and constants of the super-interface. Interfaces can extend more than one interface at a time, allowing for multiple inheritance of interfaces.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SuperClass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// This is the parent class&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Abstract class cannot be instantioted&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SubClass&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SuperClass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// This is the child class and inherits properties and methods from the parent&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// This can be instantiated&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fooBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fooBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileNotFoundException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// The interface specified at the end is given higher precedence.&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fooBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass.&lt;/p&gt;
+
+&lt;h3 id=&quot;14-polymorphism&quot;&gt;1.4 &lt;strong&gt;Polymorphism&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Polymorphism captures the ability of an object to take on different forms (&lt;em&gt;types&lt;/em&gt;). Any object that can pass more than one “is-a” test is considered polymorphic. Technically all objects are polymorphic as every class implicitly extends the Object class, this is the only class without a superclass.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vegetable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Food&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Polymorphic since Broccoli is-a Food, is-a vegetable, is-a object.&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Broccoli&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Food&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vegetable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass. This allows us to treat a family of subclasses as the parent class, while the subclasses still retain their individual behaviour. However we can only access methods that are specified or inherted from the superclass, access to the subclasses individual methods are restricted.&lt;/p&gt;
+
+&lt;h3 id=&quot;15-generics&quot;&gt;1.5 &lt;strong&gt;Generics&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;TBC&lt;/p&gt;
+
+&lt;h2 id=&quot;2-object-oriented-design-principles&quot;&gt;2. &lt;strong&gt;Object Oriented Design Principles&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Building good software is all about:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Making sure your software does what it’s supposed to&lt;/li&gt;
+  &lt;li&gt;Ensuring the system is flexible and extensible to acoomodate changes in requirements&lt;/li&gt;
+  &lt;li&gt;Aiming for a maintainable, reusable and extensible design&lt;/li&gt;
+  &lt;li&gt;Software should improve with extensions, not worsen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;21-design-smells&quot;&gt;2.1 &lt;strong&gt;Design Smells&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;A &lt;strong&gt;design smell&lt;/strong&gt; is a symptom of poor design, and is often caused by violation of key design principles which makes the code harder to extend and easily maintain.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Rigidity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tendency for the software being too difficult to change even in simple ways&lt;/li&gt;
+      &lt;li&gt;A single change causes a cascard of changes to other dependent modules&lt;/li&gt;
+      &lt;li&gt;High coupling&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fragility&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tendency of the software to break in many places when a single change is made&lt;/li&gt;
+      &lt;li&gt;High coupling&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Immobility&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Design is hard to reuse&lt;/li&gt;
+      &lt;li&gt;Design has parts that could be useful to other systems, but effort needed disentangle the system is too high&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Viscosity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Software Viscosity - changes are easier to implement through ‘hacks’ over ‘design preserving methods’&lt;/li&gt;
+      &lt;li&gt;Environment Viscosity - development environment is slow and in-efficient&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Opacity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tendency of a module to be difficult to understand&lt;/li&gt;
+      &lt;li&gt;Code must be written in a clear and readable manner&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Needless Complexity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Contains constructs that are not currently useful&lt;/li&gt;
+      &lt;li&gt;Trying to develop ahead of requirements&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Needless repitition&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Design contains repeated structures that should be unified under a single abstractio&lt;/li&gt;
+      &lt;li&gt;Bugs found in repearted units have to fixed in every repition&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-coupling-and-cohesion&quot;&gt;2.2 &lt;strong&gt;Coupling and Cohesion&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The design quality of software is characterised by &lt;strong&gt;coupling&lt;/strong&gt; and &lt;strong&gt;cohesion&lt;/strong&gt;. Good software aims for loose coupling and high cohesion.&lt;/p&gt;
+
+&lt;p&gt;Coupling is defined as the degree of interdependence between components or classes, or the extend to which a class knows about other classes. High coupling occurs when a class &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; knows too much about another class &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; depends to much on the &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;’s internal workings, and is hence affected by internal changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;. This is not a maintainable system, and should be aimed to be more loosely coupled, where &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; depends on &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;’s external structure but not the internal workings. &lt;em&gt;Zero coupled&lt;/em&gt; classes aren’t really useful, as classes need to interact with each other, so we should aim for loose coupling.&lt;/p&gt;
+
+&lt;p&gt;Cohesion is defined as the the degree to which all the elements of a component, class, or module work together as a functional unit. This is about making discrete parts of your structure have a unified purpose by separating out responsibility.&lt;/p&gt;
+
+&lt;h3 id=&quot;23-solid-principles&quot;&gt;2.3 &lt;strong&gt;SOLID Principles&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Single responsibility principle&lt;/strong&gt;: A class should only have a single responsibility&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open-closed principle&lt;/strong&gt;: Software entities should be open for extension, but closed for modification&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Liskov substitution principle&lt;/strong&gt;: Objects in a program should be replaceable with instances of their subtypes without alterting the correctness of that program&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interface segregation principle&lt;/strong&gt;: Many client-specific interfaces are better than one general-purpose interface&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dependency inversion principle&lt;/strong&gt;: One should “depend upon abstractions, not concretions”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-design-principles&quot;&gt;2.4 &lt;strong&gt;Design Principles&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Law of Demeter&lt;/strong&gt; (Talk only to your friends):
+    &lt;ol&gt;
+      &lt;li&gt;A method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; in an object &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; can call on any other method within &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; itself&lt;/li&gt;
+      &lt;li&gt;A method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; in and object &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; can call on any methods of paramers apssed to the method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;A method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; can call a method &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; of another object, if that object is instantiated within the method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Any method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; in an object &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; can call on any methods of any type of object that is a direct component of &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composition over Inheritance&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Delegation - delegate the functionality to another class&lt;/li&gt;
+      &lt;li&gt;Composition - reuse behaviour using one or more classes with composition&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Method Overriding Rules&lt;/strong&gt;:
+    &lt;ol&gt;
+      &lt;li&gt;The argument list should be exactly the same as the overridden method&lt;/li&gt;
+      &lt;li&gt;The acces level cannot be more restrictive than the overridden method&lt;/li&gt;
+      &lt;li&gt;A method declared &lt;code class=&quot;highlighter-rouge&quot;&gt;final&lt;/code&gt; cannot be overridden&lt;/li&gt;
+      &lt;li&gt;Constructors cannot be overridden&lt;/li&gt;
+      &lt;li&gt;The return type in the overridden method should be the same or a sub-type of the return type defined in the super-class&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-code-smells&quot;&gt;2.5 &lt;strong&gt;Code Smells&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Duplicated code
+    &lt;ul&gt;
+      &lt;li&gt;Same code structure in more than one place&lt;/li&gt;
+      &lt;li&gt;Same expression in sibling classes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Long method&lt;/li&gt;
+  &lt;li&gt;Large class
+    &lt;ul&gt;
+      &lt;li&gt;Too many instance variables or properties&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Long parameter list&lt;/li&gt;
+  &lt;li&gt;Divergent change
+    &lt;ul&gt;
+      &lt;li&gt;Class is commonly changed in different ways for different reasons&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Shotgun surgery
+    &lt;ul&gt;
+      &lt;li&gt;Make a lot of little changes to a lot of different classes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;26-refactoring-methods&quot;&gt;2.6 Refactoring Methods&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Extract method:
+    &lt;ul&gt;
+      &lt;li&gt;Find a logical clumps of code in a long or complex method and place into separate methods&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rename variables
+    &lt;ul&gt;
+      &lt;li&gt;Good code should communicate what it is doing clearly&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Move method
+    &lt;ul&gt;
+      &lt;li&gt;Method should be on the object whose data it uses&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Replace conditional logic with Polymorphism
+    &lt;ul&gt;
+      &lt;li&gt;Switch statements should not check types&lt;/li&gt;
+      &lt;li&gt;Move individual behaviour into the subclasses&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-behavioural-design-patterns&quot;&gt;3. &lt;strong&gt;Behavioural Design Patterns&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;31-strategy-design-pattern&quot;&gt;3.1 &lt;strong&gt;Strategy Design Pattern&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;311-problem&quot;&gt;3.1.1 &lt;strong&gt;Problem&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;When we need a class to be able to have a method have multiple behaviours (and add behaviours later down the line). For example having a class &lt;code class=&quot;highlighter-rouge&quot;&gt;Duck&lt;/code&gt; which has a method &lt;code class=&quot;highlighter-rouge&quot;&gt;quack&lt;/code&gt;, however we want to extend this class to allow us to implement a &lt;code class=&quot;highlighter-rouge&quot;&gt;RubberDuck&lt;/code&gt; which instead of using &lt;code class=&quot;highlighter-rouge&quot;&gt;quack&lt;/code&gt;, we want it to &lt;code class=&quot;highlighter-rouge&quot;&gt;sqeak&lt;/code&gt;. We can do this by creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;RubberDuck&lt;/code&gt; subclass that extends from duck and overrides the method, however if we to continue to add more duck subclasses and continue to override methods, it’s not effiecient.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Quacking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RubberDuck&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Squeaking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mallard&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Yelling behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;312-solution&quot;&gt;3.1.2 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;To avoid this issue with creating many subclasses that override the same functions we can instead &lt;em&gt;encapsulate the differences&lt;/em&gt; into a separate class that controls the behaviour. This includes the added benefit of decoupling the behaviour from the user class, which allows the strategy method to be extendable without any modification to any code.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;noise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quack&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Quacking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Squeak&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Squeaking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Yell&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Yelling behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;32-state-pattern&quot;&gt;3.2 &lt;strong&gt;State Pattern&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;321-problem&quot;&gt;3.2.1 &lt;strong&gt;Problem&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;When we have an object that needs to change its behaviour based on its current state&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
         <link>http://localhost:4000/notes/2019/09/10/comp2511-notes.html</link>
