@@ -1,30 +1,1051 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>tatsislam.github.io</title>
+    <description>Mechatronic Engineering and Computer Science student at the University of New South Wales
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Jan 2020 22:51:38 +1100</pubDate>
+    <lastBuildDate>Sun, 12 Jan 2020 22:51:38 +1100</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>COMP3411 - Notes</title>
+        <description>&lt;h1 id=&quot;comp3411---artificial-intelligence&quot;&gt;&lt;strong&gt;COMP3411 - Artificial Intelligence&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;This course covers introductions to artificially intelligent agents, search problems, machine learning, knowledge and reasoning.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-foundations&quot;&gt;1. &lt;strong&gt;Foundations&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-what-is-artificial-intelligence&quot;&gt;1.1. &lt;strong&gt;What is Artificial Intelligence&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Artificial Intelligence is the sythesis and analysis of computational agents that act intelligently. And &lt;em&gt;agent&lt;/em&gt; is something that acts in an environment.
+An agent acts intelligently if:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Its actions are appropriate for its goals and circumstances&lt;/li&gt;
+  &lt;li&gt;it is flexible to changing environments and goals&lt;/li&gt;
+  &lt;li&gt;it learns from experience&lt;/li&gt;
+  &lt;li&gt;it makes appropriate choices given perceptual and computational limitations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-goals-of-ai&quot;&gt;1.2. &lt;strong&gt;Goals of AI&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Scientific goal&lt;/em&gt;: to understand the principles that make intelligent behaviour possible in natural or artificial systems and to design, build and experiment with computational systems that perform tasks that require intelligence.&lt;br /&gt;
+&lt;em&gt;Engineering goal&lt;/em&gt;: design useful, intelligent computational agents.&lt;/p&gt;
+
+&lt;h3 id=&quot;13-what-is-intelligence-turing-test&quot;&gt;1.3. &lt;strong&gt;What is Intelligence (Turing Test)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The Turing test is a test of a machine’s ability to exhibit intelligent behaviour equivalent to, or indistinguishable from that of a human. A standard interpretation of the Turing test in which player C is given the task of trying to determine which of players A and B are a human or computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/comp3411/Turing_test_diagram.png&quot; alt=&quot;Players A, B and C are in separated rooms, with player C communicating with both&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Jan 2020 03:20:27 +1100</pubDate>
+        <link>http://localhost:4000/notes/2020/01/11/comp3411-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2020/01/11/comp3411-notes.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Notes</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>COMP3511 - Assignment 1</title>
+        <description>&lt;h1 id=&quot;comp3511-assignment-1&quot;&gt;&lt;strong&gt;COMP3511 Assignment 1&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;assignment-structure&quot;&gt;&lt;strong&gt;Assignment Structure&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Define the website purpose (7 lines)&lt;/li&gt;
+  &lt;li&gt;Identify the users of the website (Stakeholder)&lt;/li&gt;
+  &lt;li&gt;List the tasks that they are trying to achiece.&lt;/li&gt;
+  &lt;li&gt;chose two tasks and try to complete those tasks&lt;/li&gt;
+  &lt;li&gt;During performing the tasks analuze the interface and list all the issues in a table for each type of analysis&lt;/li&gt;
+  &lt;li&gt;Choose 8 issues and analyse them in detail&lt;/li&gt;
+  &lt;li&gt;Analyse the website from the accessivility perspective.&lt;/li&gt;
+  &lt;li&gt;Cite your claims and add references (annotated screeenshots)&lt;/li&gt;
+  &lt;li&gt;You should also take screenshots and point out specific freatures on the sketches by annotating the sketches.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A HD report would have at least 20 issues across the issue tables and an in depth discussion of 8 issues
+The issue tables should be structured like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Design Principles&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Issue Number&lt;/td&gt;
+      &lt;td&gt;Issue description&lt;/td&gt;
+      &lt;td&gt;Type&lt;/td&gt;
+      &lt;td&gt;Principle&lt;/td&gt;
+      &lt;td&gt;Positive/Negative&lt;/td&gt;
+      &lt;td&gt;Severity&lt;/td&gt;
+      &lt;td&gt;Screenshot&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;universal-accesibility&quot;&gt;&lt;strong&gt;Universal Accesibility&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Consider a blind or visually impaired computer user. What sort of support do you think they would need when using a computer with a graphcial user interface.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Screen reader&lt;/li&gt;
+  &lt;li&gt;Zoom&lt;/li&gt;
+  &lt;li&gt;Voice recognition&lt;/li&gt;
+  &lt;li&gt;Alt text&lt;/li&gt;
+  &lt;li&gt;Invert colour / Brightness
+Some websites give reports on accessibility, you can refer to those reports in your report&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;draft&quot;&gt;&lt;strong&gt;Draft&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;interface-05-page&quot;&gt;&lt;strong&gt;Interface&lt;/strong&gt; (0.5 page)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Here we will define the purpose of the website in general terms. But also we will also strictly define THREE goals of the website.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The NSW Rural Fire Service (RFS) website aims to provide a range of information on dangerous fires taking place across NSW. This information includes current danger warnings, guides on planning and preparing for fires, volunteering opportunities, media releases and other information.&lt;/p&gt;
+
+&lt;p&gt;While there are numerous goals that a user may have when accessing the RFS website, there are three important and useful services that users are aiming to access:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Checking to see if there are fires or warnings near their home&lt;/li&gt;
+  &lt;li&gt;Advice on what to do in the event of a fire emergency&lt;/li&gt;
+  &lt;li&gt;Blah&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;users-025-page&quot;&gt;&lt;strong&gt;Users&lt;/strong&gt; (0.25 page)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Here we will give FIVE examples of different types of people that would use this website, giving a short description of each of these stakeholders.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While there are countless categories of people accessing and using the RFS website this report will recognise five types of users:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;People in areas in danger of bushfires&lt;/li&gt;
+  &lt;li&gt;People who are preparing for fire danger&lt;/li&gt;
+  &lt;li&gt;People who wish to volunteer for the RFS&lt;/li&gt;
+  &lt;li&gt;Journalists who are reporting on fires&lt;/li&gt;
+  &lt;li&gt;Fuck knows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tasks-05-page&quot;&gt;&lt;strong&gt;Tasks&lt;/strong&gt; (0.5 page)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Using TWO users that you have come up with, analyse what each of those people are trying to accomplish when they use the site.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;issues-table&quot;&gt;&lt;strong&gt;Issues table&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;critique-including-annotated-images-6-pages&quot;&gt;&lt;strong&gt;Critique including annotated images&lt;/strong&gt; (6 pages)&lt;/h3&gt;
+
+&lt;h3 id=&quot;accessibility-issues-and-observations&quot;&gt;&lt;strong&gt;Accessibility Issues and Observations&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;appendix&quot;&gt;&lt;strong&gt;Appendix&lt;/strong&gt;&lt;/h3&gt;
+</description>
+        <pubDate>Fri, 10 Jan 2020 03:20:27 +1100</pubDate>
+        <link>http://localhost:4000/notes/assignment/2020/01/10/comp3511-ass1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/assignment/2020/01/10/comp3511-ass1.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Assignment</category>
+        
+      </item>
+    
+      <item>
+        <title>COMP3511 - Notes</title>
+        <description>&lt;h1 id=&quot;comp3511---human-computer-interaction&quot;&gt;&lt;strong&gt;COMP3511 - Human Computer Interaction&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;Human Computer Interaction is all about understanding the design, implementation and evaluation of interactive systems that considers the users at every stage of the process.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-framework-for-evaluation&quot;&gt;1. &lt;strong&gt;Framework for Evaluation&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This topic covers all the elements you should consider in analysing and evalutating and interface or design.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-some-basic-ideas&quot;&gt;1.1. &lt;strong&gt;Some basic ideas&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;goals-and-tasks&quot;&gt;&lt;strong&gt;Goals and Tasks&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;To evaluate an interface, we must think of what &lt;em&gt;goals&lt;/em&gt; a user wants to achieve. In order to achieve these goals users may have to carry out &lt;em&gt;tasks&lt;/em&gt; (steps) to reach the goal.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-interaction-design&quot;&gt;&lt;strong&gt;What is interaction design&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Interaction design is all about making &lt;em&gt;usable&lt;/em&gt; products. Usable here means:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Easy to learn&lt;/li&gt;
+  &lt;li&gt;Effective to use&lt;/li&gt;
+  &lt;li&gt;Provides an enjoyable experience
+We also aim to optimise user interaction with the system or product so that they support and extend the user’s activities in effective useful and usable ways&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The process of interaction design follows the same process of any design development:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Establishing requirements&lt;/li&gt;
+  &lt;li&gt;Developing alternatives&lt;/li&gt;
+  &lt;li&gt;Prototyping&lt;/li&gt;
+  &lt;li&gt;Evaluating
+With the steps repeated enough times as necessary until the design meets the requirements set.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-usability-goals&quot;&gt;1.2. &lt;strong&gt;Usability Goals&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;These are what you should check in terms of usability for an interface:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Effective
+    &lt;ul&gt;
+      &lt;li&gt;How well does a product do what it’s supposed to do?&lt;/li&gt;
+      &lt;li&gt;Does it help people achieve their goals?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Efficiency
+    &lt;ul&gt;
+      &lt;li&gt;Does it help people achieve their goals with minimal steps?&lt;/li&gt;
+      &lt;li&gt;Does it have unnecessary tasks that are more “system related” rather than through a natural method?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Safety
+    &lt;ul&gt;
+      &lt;li&gt;Doesn’t kill or injure people&lt;/li&gt;
+      &lt;li&gt;Helps avoid mistakes&lt;/li&gt;
+      &lt;li&gt;Doesn’t delete important information&lt;/li&gt;
+      &lt;li&gt;Undo provided&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Utility
+    &lt;ul&gt;
+      &lt;li&gt;Does the product have all the functions that the user needs to achieve the goals?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Learnability
+    &lt;ul&gt;
+      &lt;li&gt;Is the system easy to use?&lt;/li&gt;
+      &lt;li&gt;Can the user start using it with minimal confusion / cognitive load&lt;/li&gt;
+      &lt;li&gt;Doesn’t take long to be productive&lt;/li&gt;
+      &lt;li&gt;Similar tasks have similar interactions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Memorability
+    &lt;ul&gt;
+      &lt;li&gt;Is it easy to forget how to use the system?&lt;/li&gt;
+      &lt;li&gt;How often do people use the system?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-design-principles&quot;&gt;1.3. &lt;strong&gt;Design principles&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Design principles are generalizable abstractions for thinking about different aspects and elements of design.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Visibility
+    &lt;ul&gt;
+      &lt;li&gt;Helps the user understand what to do with the system&lt;/li&gt;
+      &lt;li&gt;The visual design provides clues about how to interact with the system&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Feedback
+    &lt;ul&gt;
+      &lt;li&gt;The way the system reacts to the user input, sending a &lt;em&gt;signal&lt;/em&gt; back to the user&lt;/li&gt;
+      &lt;li&gt;Can be visual or auditory&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Constraints
+    &lt;ul&gt;
+      &lt;li&gt;Physical
+        &lt;ul&gt;
+          &lt;li&gt;Keys can only be inserted in a specific orientation&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Semantic
+        &lt;ul&gt;
+          &lt;li&gt;Some things just make sense, and some things don’t&lt;/li&gt;
+          &lt;li&gt;Requires that we have knowledge of the real world and can translate those relations to the system&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Cultural
+        &lt;ul&gt;
+          &lt;li&gt;Socically acceptable behaviour in one society could differ from another society&lt;/li&gt;
+          &lt;li&gt;localised products might work in a particular way&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Logical
+        &lt;ul&gt;
+          &lt;li&gt;exploits people’s everyday common sense and logical reasoning&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Natural mappings
+    &lt;ul&gt;
+      &lt;li&gt;Spatial relationship between controls and the outcome&lt;/li&gt;
+      &lt;li&gt;Layout and physical design&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;14-usability-principles-heuristics&quot;&gt;1.4. &lt;strong&gt;Usability Principles (Heuristics)&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Visibility of system status
+    &lt;ul&gt;
+      &lt;li&gt;To do with feedback&lt;/li&gt;
+      &lt;li&gt;Keep the user informed&lt;/li&gt;
+      &lt;li&gt;Show what the system is doing&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Match between system and the real world
+    &lt;ul&gt;
+      &lt;li&gt;Avoid system-oriented jargon&lt;/li&gt;
+      &lt;li&gt;Familiar concepts to the user&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;User control and freedom
+    &lt;ul&gt;
+      &lt;li&gt;Actions are not taking place in unpredictable, automatic ways&lt;/li&gt;
+      &lt;li&gt;The user needs to be in control as much of possibles&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Consistency and standards
+    &lt;ul&gt;
+      &lt;li&gt;Helps users understand what could do since they can build knowledge they have acquired elsewhere&lt;/li&gt;
+      &lt;li&gt;Actions or sequences of actions are conducted in the same manner&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Help and Documentation
+    &lt;ul&gt;
+      &lt;li&gt;Information that can be easily accessed and searched&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Help users recognise, diagnose and recover from errors
+    &lt;ul&gt;
+      &lt;li&gt;Error messages are presented using plain language that the user can understand&lt;/li&gt;
+      &lt;li&gt;The error is described and a solution is presented&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Error prevention
+    &lt;ul&gt;
+      &lt;li&gt;Stop errors from occurring in the first place&lt;/li&gt;
+      &lt;li&gt;Providing clear labelling or meaningful terminology&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Recognition rather than recall
+    &lt;ul&gt;
+      &lt;li&gt;Relying on being able to easily recognise options&lt;/li&gt;
+      &lt;li&gt;Not relying on memorisation of sequences, commands and ideas&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Flexibility and efficiency of use
+    &lt;ul&gt;
+      &lt;li&gt;Experienced users want to carry out their tasks efficiently&lt;/li&gt;
+      &lt;li&gt;Provide alternative ways/paths to cater for both experienced and inexperienced users&lt;/li&gt;
+      &lt;li&gt;Accelerators not visibile to the novice user but provide efficiency for the expert&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Aesthetic and minimalist design
+    &lt;ul&gt;
+      &lt;li&gt;Avoid providing information that is irrelevant or rarely needed.&lt;/li&gt;
+      &lt;li&gt;Reduce the number of steps needed to achieve important goals&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;15-user-experience-ux&quot;&gt;1.5. &lt;strong&gt;User Experience (UX)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;User experience is all about the &lt;em&gt;v i b e&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;16-think-aloud-protocol&quot;&gt;1.6. &lt;strong&gt;Think aloud protocol&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The think aloud protocol is an observation technique used to evaluate an interface by verbalising the thoughts a user has as they interact with the interface.
+The aim is to gather a lot of user comments about the interactions and understand where the good interactions happen and where the pain points are.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-design-process-idea-to-scenarios&quot;&gt;2. &lt;strong&gt;Design Process: Idea to Scenarios&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This topic covers the process of going from an idea to getting ready to build your first prototype&lt;/p&gt;
+
+&lt;h3 id=&quot;21-product-description-statement&quot;&gt;2.1. &lt;strong&gt;Product Description Statement&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The product description statment is a short summary that describes what the product will do to meeet the user goals. It should be around 30 words or less. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This app aims to allow students to write notes for their classes in a “gamified” way to encourage good study habits.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The aim of the product description statement is to condense the entire idea to a single or simplified focus, so that it can be relied on in the evaluation stages to see if the product meets the description.&lt;/p&gt;
+&lt;h3 id=&quot;22-stakeholders&quot;&gt;2.2. &lt;strong&gt;Stakeholders&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;There are a range of people involved in the process that can be referred to as stakeholders&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Direct users (primary)
+    &lt;ul&gt;
+      &lt;li&gt;Usually the target audience for the interface&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Indirect users (secondary)
+    &lt;ul&gt;
+      &lt;li&gt;Those who manage direct users&lt;/li&gt;
+      &lt;li&gt;Those who receive output from the product&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Other stakeholders (tertiary)&lt;/li&gt;
+  &lt;li&gt;Don’t include facilitating stakeholders (Designers)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-data-gathering&quot;&gt;2.3. &lt;strong&gt;Data Gathering&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The point of data gathering is about knowing what users want, how they interact with existing systems, and understanding what changes or new features need to be developed.&lt;/p&gt;
+
+&lt;p&gt;Data gathering is generally done through the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Questionnaires&lt;/li&gt;
+  &lt;li&gt;Interviews&lt;/li&gt;
+  &lt;li&gt;Focus groups and workshops&lt;/li&gt;
+  &lt;li&gt;Naturalistic observation&lt;/li&gt;
+  &lt;li&gt;Studying documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-personas&quot;&gt;2.4. &lt;strong&gt;Personas&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;After you’ve gathered, organised and analysed your data you will gain and understanding of the user’s point of view. This will allow you to develop &lt;em&gt;personas&lt;/em&gt;. There are two broad types of personas:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Marketing-targeted personas - that model purchase motivations&lt;/li&gt;
+  &lt;li&gt;Interactive personas - that model usage behaviours&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Personas usually have a list of information to flesh out their character:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Personal
+    &lt;ul&gt;
+      &lt;li&gt;Name&lt;/li&gt;
+      &lt;li&gt;Age&lt;/li&gt;
+      &lt;li&gt;Gender&lt;/li&gt;
+      &lt;li&gt;Photo&lt;/li&gt;
+      &lt;li&gt;Ability/Disability&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Professional
+    &lt;ul&gt;
+      &lt;li&gt;Education&lt;/li&gt;
+      &lt;li&gt;Professional background&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Technical
+    &lt;ul&gt;
+      &lt;li&gt;Goals&lt;/li&gt;
+      &lt;li&gt;Computer literacy&lt;/li&gt;
+      &lt;li&gt;Technology they use to access interface&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-scenarios&quot;&gt;2.5. &lt;strong&gt;Scenarios&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;A scenario is a contextual narrative based on the findings of your data gathering and analysis featuring your personas. These scenarios and goal-directed and should outline the tasks that the persona carries out as they achieve their goals.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Think aloud protocol&lt;/li&gt;
+  &lt;li&gt;Product desicription statement&lt;/li&gt;
+  &lt;li&gt;Stakeholders and users&lt;/li&gt;
+  &lt;li&gt;Data gathering&lt;/li&gt;
+  &lt;li&gt;Personas&lt;/li&gt;
+  &lt;li&gt;Scenarios&lt;/li&gt;
+  &lt;li&gt;Diagrammatic Techniques&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 06 Jan 2020 03:20:27 +1100</pubDate>
+        <link>http://localhost:4000/notes/2020/01/06/comp3511-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2020/01/06/comp3511-notes.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Notes</category>
+        
+      </item>
+    
+      <item>
+        <title>MMAN2130</title>
+        <description>&lt;h1 id=&quot;mman2130-notes&quot;&gt;MMAN2130 Notes&lt;/h1&gt;
+
+&lt;h2 id=&quot;project-specification&quot;&gt;Project Specification&lt;/h2&gt;
+
+&lt;p&gt;As a team, a PP175 Vertical Displacement Pump will be designed and manufactured according to the specifications outlined in the requirements document (which needs to be linked here).
+The pump will consist of 5 major componenents:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Base: For interfacing between the pump and testing jig&lt;/li&gt;
+  &lt;li&gt;Piston housing: A cylinder that contains the piston and allows compression of the working fluid, in this case air&lt;/li&gt;
+  &lt;li&gt;Piston head and rod: The piston head and rod are to be made from one part&lt;/li&gt;
+  &lt;li&gt;Input and output valves: To control in the input and output of fluid in the piston&lt;/li&gt;
+  &lt;li&gt;Cover: To seal the piston housing&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
+        <link>http://localhost:4000/notes/2019/09/10/mman2130-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/mman2130-notes.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Notes</category>
+        
+      </item>
+    
+      <item>
+        <title>ENGG2400</title>
+        <description>&lt;h1 id=&quot;engg2400---mechanics-of-solids&quot;&gt;ENGG2400 - Mechanics of Solids&lt;/h1&gt;
+&lt;h2 id=&quot;1-stress-and-strain&quot;&gt;1. &lt;strong&gt;Stress and Strain&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-stress&quot;&gt;1.1 &lt;strong&gt;Stress&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Stress (denoted by &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;) is one of the ways to describe the intensity of the internal forces of a body. There are two types of stress, &lt;em&gt;normal stress&lt;/em&gt; and &lt;em&gt;shear stress&lt;/em&gt; both of which are measured in units of Pascals (&lt;em&gt;Pa&lt;/em&gt;) or more usually Megapascals (&lt;em&gt;MPa&lt;/em&gt;). Stress at an infinitesimal point is calculated from the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \sigma = \lim_{\Delta A \to 0} \frac{\Delta F}{\Delta A}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;\Delta F&lt;/script&gt; is a force over the internal cross-sectional area &lt;script type=&quot;math/tex&quot;&gt;\Delta A&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;111-normal-stress&quot;&gt;1.1.1 &lt;strong&gt;Normal Stress&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Normal stress&lt;/em&gt; (denoted by &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;\sigma_z&lt;/script&gt;) is the stress component caused by a force perpendicular to the cross-section that we are analysing. The effect of a normal stress is usually a &lt;em&gt;volume change&lt;/em&gt; (however this depends on perspective). Pure volume change only occurs if there is an equal normal stress in all directions acting on a body, otherwise some shape change will occur.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1normalstressimg.jpg&quot; alt=&quot;Normal Stress Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It most likely that we will be calculating the average normal stress over a finite area rather than an infinitesimal area, and hence average stress would calculated from the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \sigma_{avg} = \frac{F}{A}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt; is the normal component force acting over the cross sectional area &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; of a body. The value of the average normal stress assumes that &lt;script type=&quot;math/tex&quot;&gt;F&lt;/script&gt; is entirely uniform over the, which is usually not the case in practical scenarios.&lt;/p&gt;
+
+&lt;h4 id=&quot;112-shear-stress&quot;&gt;1.1.2 &lt;strong&gt;Shear Stress&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Shear stress&lt;/em&gt; (sometimes denoted as &lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt;) is the stress component caused by a shearing force (or couple of forces) acting parallel or tangential to a surface. When working in three dimensions it’s best to break the shear force into two independent components, &lt;script type=&quot;math/tex&quot;&gt;\tau_x&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\tau_y&lt;/script&gt;. Shear stress has the effect of a &lt;em&gt;shape change&lt;/em&gt;, with the body deforming into a completely new shape.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1shearstressimg.jpg&quot; alt=&quot;Shear Stress Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Again we are likely going to be focused on average shear stress which can be calculated using the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \tau_{avg} = \frac{V}{A}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt; is the total tangential force (in one co-ordinate direction) and &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; is the area of contact between the shearing bodies.&lt;/p&gt;
+
+&lt;h4 id=&quot;113-3-dimensional-stresses&quot;&gt;1.1.3 &lt;strong&gt;3 Dimensional Stresses&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;In most general cases of 3 dimensions, there may be a maximum of 6 components of stresses, being 3 normal stresses &lt;script type=&quot;math/tex&quot;&gt;\sigma_{xx}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\sigma_{yy}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\sigma_{zz}&lt;/script&gt;, and 3 shear stresses &lt;script type=&quot;math/tex&quot;&gt;\tau_{xy}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\tau_{yz}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\tau_{zx}&lt;/script&gt;. These components together make up the &lt;em&gt;stress tensor&lt;/em&gt;, a 3*3 symmetric matrix.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align*}
+    \sigma  = 
+    \left[ {\begin{array}{ccc}
+        \sigma_{xx} &amp;   \tau_{xy}       &amp;   \tau_{xz} \\
+        \tau_{yx}   &amp;   \sigma_{yy}    &amp;   \tau_{yz} \\
+        \tau_{zx}   &amp;   \tau_{zy}       &amp;   \sigma_{zz}\\
+        \end{array} } \right]
+\end{align*} %]]&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;114-bearing-stress&quot;&gt;1.1.4 &lt;strong&gt;Bearing Stress&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Bearing stress&lt;/em&gt; is a compressive stress that acts between two bodies when one body is pushed against another. Similar to internal normal stress in that the force is acting perpendicular to the surface area, however the surface area itself is the contact area between the two bodies as in shear stress.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/engg2400/week1bearingstressimg.jpg&quot; alt=&quot;Bearing Stress Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bearing stress itself is calculated from the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \sigma_{b} = \frac{F_{b}}{A_{b}}
+\end{align*}&lt;/script&gt;
+
+&lt;h3 id=&quot;12-strain&quot;&gt;1.2 &lt;strong&gt;Strain&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A &lt;em&gt;strain&lt;/em&gt; is defined as the ratio of the deformation to the original size of abody (intensity of deformation essentially). There are two types of strains that correspond to our two main stresses:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Normal strain &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Shear strain &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt;&lt;/strong&gt;
+Strains are dinmensionless but are often given units of m/m, mm/mm or &lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt;.
+In practical engineering strains are much easier to measrue than stress due to the fact that we are measuring phsyical deformations.
+As a part of this course, definitions are based on infinitesimal displacements and deformations associated with shear are usually neglected.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;121-average-axial-strain&quot;&gt;1.2.1 &lt;strong&gt;Average Axial Strain&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;em&gt;average axial strain&lt;/em&gt; (or normal strain) is assuming the strain is uniform through the cross-section, which in turn means that the deformation is equal across the body. Average axial strain over a length can be calculated using the following formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    \epsilon_{avg} = \frac{e}{L}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt; is the change in length and &lt;script type=&quot;math/tex&quot;&gt;L&lt;/script&gt; is the original length of the body.&lt;/p&gt;
+
+&lt;h4 id=&quot;122-shear-strain&quot;&gt;1.2.2 &lt;strong&gt;Shear Strain&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The &lt;em&gt;shear strain&lt;/em&gt; is a measure of the angle of distortion and is usually denoted by &lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\engg2400\week1shearstrainimg.jpg&quot; alt=&quot;Shear Strain Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This angle is calculated through simple trigonometry:&lt;/p&gt;
+
+&lt;h3 id=&quot;13-relationsip-between-strain-and-stress&quot;&gt;1.3 &lt;strong&gt;Relationsip between strain and stress&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Due to the fact that direct measurement of strain is much easier than measuring stress, through the use of material properties we develop a relationship between stress and strain. This content is covered in Week 3 content&lt;/p&gt;
+
+&lt;h4 id=&quot;131&quot;&gt;1.3.1&lt;/h4&gt;
+
+&lt;h2 id=&quot;2-mechanical-properties&quot;&gt;2. &lt;strong&gt;Mechanical Properties&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;21-stress-vs-strain-diagrams&quot;&gt;2.1 &lt;strong&gt;Stress vs Strain Diagrams&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;\assets\engg2400\week2stressstrainimg.jpg&quot; alt=&quot;Stress Strain Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A stress-strain diagram shows us the behaviour of a material’s shape deformation, as it moves through elastic to plastic deformation and finally to necking and fracturing. The elastic behaviour of the material is informed by the linear relationship between the stress and strain. The ratio of the this region describes the &lt;em&gt;Elastic Modulus&lt;/em&gt; or &lt;em&gt;Young’s Modulus&lt;/em&gt; (&lt;em&gt;E&lt;/em&gt;):&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+    E = \frac{\sigma}{\epsilon}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;This equation is also a materially intrinsic version of Hooke’s Law.&lt;/p&gt;
+
+&lt;h3 id=&quot;22-poissons-ratio&quot;&gt;2.2 &lt;strong&gt;Poisson’s Ratio&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The ratio between the width and the depth change of an element undergoing a compressive stress is a useful material property and known as &lt;em&gt;Poisson’s Ratio&lt;/em&gt; (&lt;em&gt;v&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;23&quot;&gt;2.3&lt;/h3&gt;
+
+&lt;h2 id=&quot;3-axial-loading&quot;&gt;3. &lt;strong&gt;Axial Loading&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;4-torsion&quot;&gt;4. &lt;strong&gt;Torsion&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;5-beam-bending&quot;&gt;5. &lt;strong&gt;Beam Bending&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h2 id=&quot;6-transverse-shear&quot;&gt;6. &lt;strong&gt;Transverse Shear&lt;/strong&gt;&lt;/h2&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
+        <link>http://localhost:4000/notes/2019/09/10/engg2400-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/engg2400-notes.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Notes</category>
+        
+      </item>
+    
+      <item>
+        <title>COMP2511</title>
+        <description>&lt;h1 id=&quot;comp2511-notes&quot;&gt;&lt;strong&gt;COMP2511 Notes&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-object-oriented-introduction&quot;&gt;1. &lt;strong&gt;Object Oriented Introduction&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-java&quot;&gt;1.1 &lt;strong&gt;Java&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Java is a multiplatform development tool that is developed by Oracle. Some important features of the Java environment are as listed:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Simple syntax (Based on C)&lt;/li&gt;
+  &lt;li&gt;Object oriented&lt;/li&gt;
+  &lt;li&gt;Memory Management (Garbage collector)&lt;/li&gt;
+  &lt;li&gt;Platform Independent&lt;/li&gt;
+  &lt;li&gt;Multi-threading&lt;/li&gt;
+  &lt;li&gt;Fast&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-what-is-oo&quot;&gt;1.2 &lt;strong&gt;What is OO?&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The object oriented paradigm is design to break up a large program into a series of &lt;strong&gt;classes&lt;/strong&gt; that each have an individual responsbiility in that program. A class is similar to an abstract data type in that it has associated variables (&lt;strong&gt;properties&lt;/strong&gt;) and functions (&lt;strong&gt;methods&lt;/strong&gt;) that are defined and enclosed with the class declaration.
+The Java language is designed in such a way that &lt;em&gt;everything&lt;/em&gt; is a class, and it comes with a massive host of library classes that can do pretty much everything. So to do something like printing to stdout, you would invoke the function like this:&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HelloWorldProgram&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Declaring a method (the main method)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;World&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In designing a class consider the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Always tro to keep data private (local)&lt;/li&gt;
+  &lt;li&gt;Consider different ways an object may be created&lt;/li&gt;
+  &lt;li&gt;Always initialise data&lt;/li&gt;
+  &lt;li&gt;If the object is no longer in use, free up all the associated resources&lt;/li&gt;
+  &lt;li&gt;Classes should have a single purpose or responsibility&lt;/li&gt;
+  &lt;li&gt;Break up classes with too many responsibilities&lt;/li&gt;
+  &lt;li&gt;Factor out common attributes and take advantage of inheritance and polymorphism&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-inheritance&quot;&gt;1.3 &lt;strong&gt;Inheritance&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Inheritance&lt;/strong&gt; is a form of software reusability in which new classes are created from the existing classes by absorbing their attributes and behaviours. So instead of having to define a completely separate new class, we can more easily define a &lt;strong&gt;subclass&lt;/strong&gt; from a &lt;strong&gt;superclass&lt;/strong&gt;. We can also further extend or modify our subclass if needed, hence normally subclasses have more features than their superclasses. Subclasses in Java can only extend one superclass at a time, this is called &lt;em&gt;single inheritance&lt;/em&gt;, some languages allow for multiple inheritance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interfaces&lt;/strong&gt; are a clean way to define purely abstract and undefined classes. They have no properties or method bodies. Abstract and concrete classes can implement more than one interface at a time, and is a way that Java gets around single inheritance.
+Interfaces can also be extended by &lt;strong&gt;sub-interfaces&lt;/strong&gt;. A sub-interface inherits all the methods and constants of the super-interface. Interfaces can extend more than one interface at a time, allowing for multiple inheritance of interfaces.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SuperClass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// This is the parent class&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Abstract class cannot be instantioted&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SubClass&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SuperClass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// This is the child class and inherits properties and methods from the parent&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// This can be instantiated&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doThing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fooBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fooBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileNotFoundException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// The interface specified at the end is given higher precedence.&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fooBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass.&lt;/p&gt;
+
+&lt;h3 id=&quot;14-polymorphism&quot;&gt;1.4 &lt;strong&gt;Polymorphism&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Polymorphism captures the ability of an object to take on different forms (&lt;em&gt;types&lt;/em&gt;). Any object that can pass more than one “is-a” test is considered polymorphic. Technically all objects are polymorphic as every class implicitly extends the Object class, this is the only class without a superclass.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vegetable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Food&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Polymorphic since Broccoli is-a Food, is-a vegetable, is-a object.&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Broccoli&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Food&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vegetable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass. This allows us to treat a family of subclasses as the parent class, while the subclasses still retain their individual behaviour. However we can only access methods that are specified or inherted from the superclass, access to the subclasses individual methods are restricted.&lt;/p&gt;
+
+&lt;h3 id=&quot;15-generics&quot;&gt;1.5 &lt;strong&gt;Generics&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Generics enable &lt;em&gt;types&lt;/em&gt; (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar &lt;em&gt;formal parameters&lt;/em&gt; used in method declarations, type parameters prove&lt;/p&gt;
+
+&lt;h2 id=&quot;2-object-oriented-design-principles&quot;&gt;2. &lt;strong&gt;Object Oriented Design Principles&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Building good software is all about:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Making sure your software does what it’s supposed to&lt;/li&gt;
+  &lt;li&gt;Ensuring the system is flexible and extensible to acoomodate changes in requirements&lt;/li&gt;
+  &lt;li&gt;Aiming for a maintainable, reusable and extensible design&lt;/li&gt;
+  &lt;li&gt;Software should improve with extensions, not worsen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;21-design-smells&quot;&gt;2.1 &lt;strong&gt;Design Smells&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;A &lt;strong&gt;design smell&lt;/strong&gt; is a symptom of poor design, and is often caused by violation of key design principles which makes the code harder to extend and easily maintain.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Rigidity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tendency for the software being too difficult to change even in simple ways&lt;/li&gt;
+      &lt;li&gt;A single change causes a cascard of changes to other dependent modules&lt;/li&gt;
+      &lt;li&gt;High coupling&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fragility&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tendency of the software to break in many places when a single change is made&lt;/li&gt;
+      &lt;li&gt;High coupling&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Immobility&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Design is hard to reuse&lt;/li&gt;
+      &lt;li&gt;Design has parts that could be useful to other systems, but effort needed disentangle the system is too high&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Viscosity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Software Viscosity - changes are easier to implement through ‘hacks’ over ‘design preserving methods’&lt;/li&gt;
+      &lt;li&gt;Environment Viscosity - development environment is slow and in-efficient&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Opacity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tendency of a module to be difficult to understand&lt;/li&gt;
+      &lt;li&gt;Code must be written in a clear and readable manner&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Needless Complexity&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Contains constructs that are not currently useful&lt;/li&gt;
+      &lt;li&gt;Trying to develop ahead of requirements&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Needless repitition&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Design contains repeated structures that should be unified under a single abstractio&lt;/li&gt;
+      &lt;li&gt;Bugs found in repearted units have to fixed in every repition&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-coupling-and-cohesion&quot;&gt;2.2 &lt;strong&gt;Coupling and Cohesion&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The design quality of software is characterised by &lt;strong&gt;coupling&lt;/strong&gt; and &lt;strong&gt;cohesion&lt;/strong&gt;. Good software aims for loose coupling and high cohesion.&lt;/p&gt;
+
+&lt;p&gt;Coupling is defined as the degree of interdependence between components or classes, or the extend to which a class knows about other classes. High coupling occurs when a class &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; knows too much about another class &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; depends to much on the &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;’s internal workings, and is hence affected by internal changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;. This is not a maintainable system, and should be aimed to be more loosely coupled, where &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; depends on &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;’s external structure but not the internal workings. &lt;em&gt;Zero coupled&lt;/em&gt; classes aren’t really useful, as classes need to interact with each other, so we should aim for loose coupling.&lt;/p&gt;
+
+&lt;p&gt;Cohesion is defined as the the degree to which all the elements of a component, class, or module work together as a functional unit. This is about making discrete parts of your structure have a unified purpose by separating out responsibility.&lt;/p&gt;
+
+&lt;h3 id=&quot;23-solid-principles&quot;&gt;2.3 &lt;strong&gt;SOLID Principles&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Single responsibility principle&lt;/strong&gt;: A class should only have a single responsibility&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open-closed principle&lt;/strong&gt;: Software entities should be open for extension, but closed for modification&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Liskov substitution principle&lt;/strong&gt;: Objects in a program should be replaceable with instances of their subtypes without alterting the correctness of that program&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interface segregation principle&lt;/strong&gt;: Many client-specific interfaces are better than one general-purpose interface&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dependency inversion principle&lt;/strong&gt;: One should “depend upon abstractions, not concretions”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-design-principles&quot;&gt;2.4 &lt;strong&gt;Design Principles&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Law of Demeter&lt;/strong&gt; (Talk only to your friends):
+    &lt;ol&gt;
+      &lt;li&gt;A method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; in an object &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; can call on any other method within &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; itself&lt;/li&gt;
+      &lt;li&gt;A method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; in and object &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; can call on any methods of paramers apssed to the method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;A method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; can call a method &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; of another object, if that object is instantiated within the method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Any method &lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; in an object &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; can call on any methods of any type of object that is a direct component of &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composition over Inheritance&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Delegation - delegate the functionality to another class&lt;/li&gt;
+      &lt;li&gt;Composition - reuse behaviour using one or more classes with composition&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Method Overriding Rules&lt;/strong&gt;:
+    &lt;ol&gt;
+      &lt;li&gt;The argument list should be exactly the same as the overridden method&lt;/li&gt;
+      &lt;li&gt;The acces level cannot be more restrictive than the overridden method&lt;/li&gt;
+      &lt;li&gt;A method declared &lt;code class=&quot;highlighter-rouge&quot;&gt;final&lt;/code&gt; cannot be overridden&lt;/li&gt;
+      &lt;li&gt;Constructors cannot be overridden&lt;/li&gt;
+      &lt;li&gt;The return type in the overridden method should be the same or a sub-type of the return type defined in the super-class&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-code-smells&quot;&gt;2.5 &lt;strong&gt;Code Smells&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Duplicated code
+    &lt;ul&gt;
+      &lt;li&gt;Same code structure in more than one place&lt;/li&gt;
+      &lt;li&gt;Same expression in sibling classes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Long method&lt;/li&gt;
+  &lt;li&gt;Large class
+    &lt;ul&gt;
+      &lt;li&gt;Too many instance variables or properties&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Long parameter list&lt;/li&gt;
+  &lt;li&gt;Divergent change
+    &lt;ul&gt;
+      &lt;li&gt;Class is commonly changed in different ways for different reasons&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Shotgun surgery
+    &lt;ul&gt;
+      &lt;li&gt;Make a lot of little changes to a lot of different classes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;26-refactoring-methods&quot;&gt;2.6 Refactoring Methods&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Extract method:
+    &lt;ul&gt;
+      &lt;li&gt;Find a logical clumps of code in a long or complex method and place into separate methods&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rename variables
+    &lt;ul&gt;
+      &lt;li&gt;Good code should communicate what it is doing clearly&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Move method
+    &lt;ul&gt;
+      &lt;li&gt;Method should be on the object whose data it uses&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Replace conditional logic with Polymorphism
+    &lt;ul&gt;
+      &lt;li&gt;Switch statements should not check types&lt;/li&gt;
+      &lt;li&gt;Move individual behaviour into the subclasses&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-behavioural-design-patterns&quot;&gt;3. &lt;strong&gt;Behavioural Design Patterns&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;31-strategy-design-pattern&quot;&gt;3.1 &lt;strong&gt;Strategy Design Pattern&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;311-problem&quot;&gt;3.1.1 &lt;strong&gt;Problem&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;When we need a class to be able to have a method have multiple behaviours (and add behaviours later down the line). For example having a class &lt;code class=&quot;highlighter-rouge&quot;&gt;Duck&lt;/code&gt; which has a method &lt;code class=&quot;highlighter-rouge&quot;&gt;quack&lt;/code&gt;, however we want to extend this class to allow us to implement a &lt;code class=&quot;highlighter-rouge&quot;&gt;RubberDuck&lt;/code&gt; which instead of using &lt;code class=&quot;highlighter-rouge&quot;&gt;quack&lt;/code&gt;, we want it to &lt;code class=&quot;highlighter-rouge&quot;&gt;sqeak&lt;/code&gt;. We can do this by creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;RubberDuck&lt;/code&gt; subclass that extends from duck and overrides the method, however if we to continue to add more duck subclasses and continue to override methods, it’s not effiecient.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Quacking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RubberDuck&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Squeaking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mallard&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Yelling behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;312-solution&quot;&gt;3.1.2 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;To avoid this issue with creating many subclasses that override the same functions we can instead &lt;em&gt;encapsulate the differences&lt;/em&gt; into a separate class that controls the behaviour. This includes the added benefit of decoupling the behaviour from the user class, which allows the strategy method to be extendable without any modification to any code.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Duck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;noise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quack&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Quacking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Squeak&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Squeaking behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Yell&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoiseStrategy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeNoise&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Yelling behaviour&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;32-state-pattern&quot;&gt;3.2 &lt;strong&gt;State Pattern&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;321-problem&quot;&gt;3.2.1 &lt;strong&gt;Problem&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;When we have an object that needs to change its behaviour based on its current state. If we need to continue to add behaviours and states to the class, the class can become too large or have too many responsibilities, especially if the behaviours are unrelated. States can also be “easily” managed with switch-case statements (which are terrible terrible design), and we should refactor switch statements to state patterns.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// One class to manage all state logic in a switch statement&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// low speed state logic&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// high speed state logic&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// off state logic&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;322-solution&quot;&gt;3.2.2 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;We can extract the behaviours and states into separate classes which can be better organised and prevent us from making large classes. The below example is too simplistic to actually be useful for the state pattern, however it demonstrates how each state is decoupled from the user class and from each other.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CelingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Wrapper class that delegates state logic to composed state objects&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;set_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Concrete state classses&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LowSpeedState&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// low speed logic&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HighSpeedState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HighSpeedState&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// high speed logic&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OffState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Offtate&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Off logic&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LowSpeedState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;33-iterator-pattern&quot;&gt;3.3 &lt;strong&gt;Iterator Pattern&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The iterator pattern allows for the traversal of items in a collection without revealing any internal data structures. Probably don’t have to worry too much about this one as both Java and C++ handle this one for us most of the time.&lt;/p&gt;
+
+&lt;h3 id=&quot;34-template-method-patter&quot;&gt;3.4 &lt;strong&gt;Template Method Patter&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;341-problem&quot;&gt;3.4.1 &lt;strong&gt;Problem&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Basically if we wanna do something similar to C’s function pointer magic but in a more sensible and coherent manner. How can we switch out steps in the execution of a algorithm depending on what our needs.&lt;/p&gt;
+
+&lt;h4 id=&quot;342-solution&quot;&gt;3.4.2 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;You may have noticed by now, our solution to each problem is simply to add more complex class structures into the system, just assume that that’s the case for the rest of these, because my exam is tomorrow and I am struggling to catch up.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
+        <link>http://localhost:4000/notes/2019/09/10/comp2511-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/comp2511-notes.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Notes</category>
+        
+      </item>
+    
   </channel>
 </rss>
