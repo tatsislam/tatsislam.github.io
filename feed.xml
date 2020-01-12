@@ -4,14 +4,474 @@
     <title>tatsislam.github.io</title>
     <description>Mechatronic Engineering and Computer Science student at the University of New South Wales
 </description>
-    <link>https://tatsislam.github.io//</link>
-    <atom:link href="https://tatsislam.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Dec 2019 15:28:37 +1100</pubDate>
-    <lastBuildDate>Sun, 01 Dec 2019 15:28:37 +1100</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Jan 2020 22:46:46 +1100</pubDate>
+    <lastBuildDate>Sun, 12 Jan 2020 22:46:46 +1100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>MMAN2130 - Design and Manufacturing</title>
+        <title>COMP3411 - Notes</title>
+        <description>&lt;h1 id=&quot;comp3411---artificial-intelligence&quot;&gt;&lt;strong&gt;COMP3411 - Artificial Intelligence&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;This course covers introductions to artificially intelligent agents, search problems, machine learning, knowledge and reasoning.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-foundations&quot;&gt;1. &lt;strong&gt;Foundations&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-what-is-artificial-intelligence&quot;&gt;1.1. &lt;strong&gt;What is Artificial Intelligence&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Artificial Intelligence is the sythesis and analysis of computational agents that act intelligently. And &lt;em&gt;agent&lt;/em&gt; is something that acts in an environment.
+An agent acts intelligently if:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Its actions are appropriate for its goals and circumstances&lt;/li&gt;
+  &lt;li&gt;it is flexible to changing environments and goals&lt;/li&gt;
+  &lt;li&gt;it learns from experience&lt;/li&gt;
+  &lt;li&gt;it makes appropriate choices given perceptual and computational limitations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-goals-of-ai&quot;&gt;1.2. &lt;strong&gt;Goals of AI&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Scientific goal&lt;/em&gt;: to understand the principles that make intelligent behaviour possible in natural or artificial systems and to design, build and experiment with computational systems that perform tasks that require intelligence.&lt;br /&gt;
+&lt;em&gt;Engineering goal&lt;/em&gt;: design useful, intelligent computational agents.&lt;/p&gt;
+
+&lt;h3 id=&quot;13-what-is-intelligence-turing-test&quot;&gt;1.3. &lt;strong&gt;What is Intelligence (Turing Test)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The Turing test is a test of a machine’s ability to exhibit intelligent behaviour equivalent to, or indistinguishable from that of a human. A standard interpretation of the Turing test in which player C is given the task of trying to determine which of players A and B are a human or computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/comp3411/Turing_test_diagram.png&quot; alt=&quot;Players A, B and C are in separated rooms, with player C communicating with both&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
+        <link>http://localhost:4000/notes/2019/09/10/comp3411-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/comp3411-notes.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Notes</category>
+        
+      </item>
+    
+      <item>
+        <title>COMP3511 - Assignment 1</title>
+        <description>&lt;h1 id=&quot;comp3511-assignment-1&quot;&gt;&lt;strong&gt;COMP3511 Assignment 1&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;assignment-structure&quot;&gt;&lt;strong&gt;Assignment Structure&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Define the website purpose (7 lines)&lt;/li&gt;
+  &lt;li&gt;Identify the users of the website (Stakeholder)&lt;/li&gt;
+  &lt;li&gt;List the tasks that they are trying to achiece.&lt;/li&gt;
+  &lt;li&gt;chose two tasks and try to complete those tasks&lt;/li&gt;
+  &lt;li&gt;During performing the tasks analuze the interface and list all the issues in a table for each type of analysis&lt;/li&gt;
+  &lt;li&gt;Choose 8 issues and analyse them in detail&lt;/li&gt;
+  &lt;li&gt;Analyse the website from the accessivility perspective.&lt;/li&gt;
+  &lt;li&gt;Cite your claims and add references (annotated screeenshots)&lt;/li&gt;
+  &lt;li&gt;You should also take screenshots and point out specific freatures on the sketches by annotating the sketches.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A HD report would have at least 20 issues across the issue tables and an in depth discussion of 8 issues
+The issue tables should be structured like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Design Principles&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Issue Number&lt;/td&gt;
+      &lt;td&gt;Issue description&lt;/td&gt;
+      &lt;td&gt;Type&lt;/td&gt;
+      &lt;td&gt;Principle&lt;/td&gt;
+      &lt;td&gt;Positive/Negative&lt;/td&gt;
+      &lt;td&gt;Severity&lt;/td&gt;
+      &lt;td&gt;Screenshot&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;universal-accesibility&quot;&gt;&lt;strong&gt;Universal Accesibility&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Consider a blind or visually impaired computer user. What sort of support do you think they would need when using a computer with a graphcial user interface.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Screen reader&lt;/li&gt;
+  &lt;li&gt;Zoom&lt;/li&gt;
+  &lt;li&gt;Voice recognition&lt;/li&gt;
+  &lt;li&gt;Alt text&lt;/li&gt;
+  &lt;li&gt;Invert colour / Brightness
+Some websites give reports on accessibility, you can refer to those reports in your report&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;draft&quot;&gt;&lt;strong&gt;Draft&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;interface-05-page&quot;&gt;&lt;strong&gt;Interface&lt;/strong&gt; (0.5 page)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Here we will define the purpose of the website in general terms. But also we will also strictly define THREE goals of the website.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The NSW Rural Fire Service (RFS) website aims to provide a range of information on dangerous fires taking place across NSW. This information includes current danger warnings, guides on planning and preparing for fires, volunteering opportunities, media releases and other information.&lt;/p&gt;
+
+&lt;p&gt;While there are numerous goals that a user may have when accessing the RFS website, there are three important and useful services that users are aiming to access:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Checking to see if there are fires or warnings near their home&lt;/li&gt;
+  &lt;li&gt;Advice on what to do in the event of a fire emergency&lt;/li&gt;
+  &lt;li&gt;Blah&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;users-025-page&quot;&gt;&lt;strong&gt;Users&lt;/strong&gt; (0.25 page)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Here we will give FIVE examples of different types of people that would use this website, giving a short description of each of these stakeholders.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While there are countless categories of people accessing and using the RFS website this report will recognise five types of users:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;People in areas in danger of bushfires&lt;/li&gt;
+  &lt;li&gt;People who are preparing for fire danger&lt;/li&gt;
+  &lt;li&gt;People who wish to volunteer for the RFS&lt;/li&gt;
+  &lt;li&gt;Journalists who are reporting on fires&lt;/li&gt;
+  &lt;li&gt;Fuck knows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tasks-05-page&quot;&gt;&lt;strong&gt;Tasks&lt;/strong&gt; (0.5 page)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Using TWO users that you have come up with, analyse what each of those people are trying to accomplish when they use the site.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;issues-table&quot;&gt;&lt;strong&gt;Issues table&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;critique-including-annotated-images-6-pages&quot;&gt;&lt;strong&gt;Critique including annotated images&lt;/strong&gt; (6 pages)&lt;/h3&gt;
+
+&lt;h3 id=&quot;accessibility-issues-and-observations&quot;&gt;&lt;strong&gt;Accessibility Issues and Observations&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;appendix&quot;&gt;&lt;strong&gt;Appendix&lt;/strong&gt;&lt;/h3&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
+        <link>http://localhost:4000/notes/assignment/2019/09/10/comp3511-ass1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/assignment/2019/09/10/comp3511-ass1.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Assignment</category>
+        
+      </item>
+    
+      <item>
+        <title>COMP3511 - Notes</title>
+        <description>&lt;h1 id=&quot;comp3511---human-computer-interaction&quot;&gt;&lt;strong&gt;COMP3511 - Human Computer Interaction&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;Human Computer Interaction is all about understanding the design, implementation and evaluation of interactive systems that considers the users at every stage of the process.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-framework-for-evaluation&quot;&gt;1. &lt;strong&gt;Framework for Evaluation&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This topic covers all the elements you should consider in analysing and evalutating and interface or design.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-some-basic-ideas&quot;&gt;1.1. &lt;strong&gt;Some basic ideas&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;goals-and-tasks&quot;&gt;&lt;strong&gt;Goals and Tasks&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;To evaluate an interface, we must think of what &lt;em&gt;goals&lt;/em&gt; a user wants to achieve. In order to achieve these goals users may have to carry out &lt;em&gt;tasks&lt;/em&gt; (steps) to reach the goal.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-interaction-design&quot;&gt;&lt;strong&gt;What is interaction design&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Interaction design is all about making &lt;em&gt;usable&lt;/em&gt; products. Usable here means:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Easy to learn&lt;/li&gt;
+  &lt;li&gt;Effective to use&lt;/li&gt;
+  &lt;li&gt;Provides an enjoyable experience
+We also aim to optimise user interaction with the system or product so that they support and extend the user’s activities in effective useful and usable ways&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The process of interaction design follows the same process of any design development:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Establishing requirements&lt;/li&gt;
+  &lt;li&gt;Developing alternatives&lt;/li&gt;
+  &lt;li&gt;Prototyping&lt;/li&gt;
+  &lt;li&gt;Evaluating
+With the steps repeated enough times as necessary until the design meets the requirements set.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-usability-goals&quot;&gt;1.2. &lt;strong&gt;Usability Goals&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;These are what you should check in terms of usability for an interface:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Effective
+    &lt;ul&gt;
+      &lt;li&gt;How well does a product do what it’s supposed to do?&lt;/li&gt;
+      &lt;li&gt;Does it help people achieve their goals?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Efficiency
+    &lt;ul&gt;
+      &lt;li&gt;Does it help people achieve their goals with minimal steps?&lt;/li&gt;
+      &lt;li&gt;Does it have unnecessary tasks that are more “system related” rather than through a natural method?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Safety
+    &lt;ul&gt;
+      &lt;li&gt;Doesn’t kill or injure people&lt;/li&gt;
+      &lt;li&gt;Helps avoid mistakes&lt;/li&gt;
+      &lt;li&gt;Doesn’t delete important information&lt;/li&gt;
+      &lt;li&gt;Undo provided&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Utility
+    &lt;ul&gt;
+      &lt;li&gt;Does the product have all the functions that the user needs to achieve the goals?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Learnability
+    &lt;ul&gt;
+      &lt;li&gt;Is the system easy to use?&lt;/li&gt;
+      &lt;li&gt;Can the user start using it with minimal confusion / cognitive load&lt;/li&gt;
+      &lt;li&gt;Doesn’t take long to be productive&lt;/li&gt;
+      &lt;li&gt;Similar tasks have similar interactions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Memorability
+    &lt;ul&gt;
+      &lt;li&gt;Is it easy to forget how to use the system?&lt;/li&gt;
+      &lt;li&gt;How often do people use the system?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-design-principles&quot;&gt;1.3. &lt;strong&gt;Design principles&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Design principles are generalizable abstractions for thinking about different aspects and elements of design.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Visibility
+    &lt;ul&gt;
+      &lt;li&gt;Helps the user understand what to do with the system&lt;/li&gt;
+      &lt;li&gt;The visual design provides clues about how to interact with the system&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Feedback
+    &lt;ul&gt;
+      &lt;li&gt;The way the system reacts to the user input, sending a &lt;em&gt;signal&lt;/em&gt; back to the user&lt;/li&gt;
+      &lt;li&gt;Can be visual or auditory&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Constraints
+    &lt;ul&gt;
+      &lt;li&gt;Physical
+        &lt;ul&gt;
+          &lt;li&gt;Keys can only be inserted in a specific orientation&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Semantic
+        &lt;ul&gt;
+          &lt;li&gt;Some things just make sense, and some things don’t&lt;/li&gt;
+          &lt;li&gt;Requires that we have knowledge of the real world and can translate those relations to the system&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Cultural
+        &lt;ul&gt;
+          &lt;li&gt;Socically acceptable behaviour in one society could differ from another society&lt;/li&gt;
+          &lt;li&gt;localised products might work in a particular way&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Logical
+        &lt;ul&gt;
+          &lt;li&gt;exploits people’s everyday common sense and logical reasoning&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Natural mappings
+    &lt;ul&gt;
+      &lt;li&gt;Spatial relationship between controls and the outcome&lt;/li&gt;
+      &lt;li&gt;Layout and physical design&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;14-usability-principles-heuristics&quot;&gt;1.4. &lt;strong&gt;Usability Principles (Heuristics)&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Visibility of system status
+    &lt;ul&gt;
+      &lt;li&gt;To do with feedback&lt;/li&gt;
+      &lt;li&gt;Keep the user informed&lt;/li&gt;
+      &lt;li&gt;Show what the system is doing&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Match between system and the real world
+    &lt;ul&gt;
+      &lt;li&gt;Avoid system-oriented jargon&lt;/li&gt;
+      &lt;li&gt;Familiar concepts to the user&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;User control and freedom
+    &lt;ul&gt;
+      &lt;li&gt;Actions are not taking place in unpredictable, automatic ways&lt;/li&gt;
+      &lt;li&gt;The user needs to be in control as much of possibles&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Consistency and standards
+    &lt;ul&gt;
+      &lt;li&gt;Helps users understand what could do since they can build knowledge they have acquired elsewhere&lt;/li&gt;
+      &lt;li&gt;Actions or sequences of actions are conducted in the same manner&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Help and Documentation
+    &lt;ul&gt;
+      &lt;li&gt;Information that can be easily accessed and searched&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Help users recognise, diagnose and recover from errors
+    &lt;ul&gt;
+      &lt;li&gt;Error messages are presented using plain language that the user can understand&lt;/li&gt;
+      &lt;li&gt;The error is described and a solution is presented&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Error prevention
+    &lt;ul&gt;
+      &lt;li&gt;Stop errors from occurring in the first place&lt;/li&gt;
+      &lt;li&gt;Providing clear labelling or meaningful terminology&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Recognition rather than recall
+    &lt;ul&gt;
+      &lt;li&gt;Relying on being able to easily recognise options&lt;/li&gt;
+      &lt;li&gt;Not relying on memorisation of sequences, commands and ideas&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Flexibility and efficiency of use
+    &lt;ul&gt;
+      &lt;li&gt;Experienced users want to carry out their tasks efficiently&lt;/li&gt;
+      &lt;li&gt;Provide alternative ways/paths to cater for both experienced and inexperienced users&lt;/li&gt;
+      &lt;li&gt;Accelerators not visibile to the novice user but provide efficiency for the expert&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Aesthetic and minimalist design
+    &lt;ul&gt;
+      &lt;li&gt;Avoid providing information that is irrelevant or rarely needed.&lt;/li&gt;
+      &lt;li&gt;Reduce the number of steps needed to achieve important goals&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;15-user-experience-ux&quot;&gt;1.5. &lt;strong&gt;User Experience (UX)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;User experience is all about the &lt;em&gt;v i b e&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;16-think-aloud-protocol&quot;&gt;1.6. &lt;strong&gt;Think aloud protocol&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The think aloud protocol is an observation technique used to evaluate an interface by verbalising the thoughts a user has as they interact with the interface.
+The aim is to gather a lot of user comments about the interactions and understand where the good interactions happen and where the pain points are.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-design-process-idea-to-scenarios&quot;&gt;2. &lt;strong&gt;Design Process: Idea to Scenarios&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This topic covers the process of going from an idea to getting ready to build your first prototype&lt;/p&gt;
+
+&lt;h3 id=&quot;21-product-description-statement&quot;&gt;2.1. &lt;strong&gt;Product Description Statement&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The product description statment is a short summary that describes what the product will do to meeet the user goals. It should be around 30 words or less. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This app aims to allow students to write notes for their classes in a “gamified” way to encourage good study habits.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The aim of the product description statement is to condense the entire idea to a single or simplified focus, so that it can be relied on in the evaluation stages to see if the product meets the description.&lt;/p&gt;
+&lt;h3 id=&quot;22-stakeholders&quot;&gt;2.2. &lt;strong&gt;Stakeholders&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;There are a range of people involved in the process that can be referred to as stakeholders&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Direct users (primary)
+    &lt;ul&gt;
+      &lt;li&gt;Usually the target audience for the interface&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Indirect users (secondary)
+    &lt;ul&gt;
+      &lt;li&gt;Those who manage direct users&lt;/li&gt;
+      &lt;li&gt;Those who receive output from the product&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Other stakeholders (tertiary)&lt;/li&gt;
+  &lt;li&gt;Don’t include facilitating stakeholders (Designers)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-data-gathering&quot;&gt;2.3. &lt;strong&gt;Data Gathering&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The point of data gathering is about knowing what users want, how they interact with existing systems, and understanding what changes or new features need to be developed.&lt;/p&gt;
+
+&lt;p&gt;Data gathering is generally done through the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Questionnaires&lt;/li&gt;
+  &lt;li&gt;Interviews&lt;/li&gt;
+  &lt;li&gt;Focus groups and workshops&lt;/li&gt;
+  &lt;li&gt;Naturalistic observation&lt;/li&gt;
+  &lt;li&gt;Studying documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-personas&quot;&gt;2.4. &lt;strong&gt;Personas&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;After you’ve gathered, organised and analysed your data you will gain and understanding of the user’s point of view. This will allow you to develop &lt;em&gt;personas&lt;/em&gt;. There are two broad types of personas:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Marketing-targeted personas - that model purchase motivations&lt;/li&gt;
+  &lt;li&gt;Interactive personas - that model usage behaviours&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Personas usually have a list of information to flesh out their character:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Personal
+    &lt;ul&gt;
+      &lt;li&gt;Name&lt;/li&gt;
+      &lt;li&gt;Age&lt;/li&gt;
+      &lt;li&gt;Gender&lt;/li&gt;
+      &lt;li&gt;Photo&lt;/li&gt;
+      &lt;li&gt;Ability/Disability&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Professional
+    &lt;ul&gt;
+      &lt;li&gt;Education&lt;/li&gt;
+      &lt;li&gt;Professional background&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Technical
+    &lt;ul&gt;
+      &lt;li&gt;Goals&lt;/li&gt;
+      &lt;li&gt;Computer literacy&lt;/li&gt;
+      &lt;li&gt;Technology they use to access interface&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-scenarios&quot;&gt;2.5. &lt;strong&gt;Scenarios&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;A scenario is a contextual narrative based on the findings of your data gathering and analysis featuring your personas. These scenarios and goal-directed and should outline the tasks that the persona carries out as they achieve their goals.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Think aloud protocol&lt;/li&gt;
+  &lt;li&gt;Product desicription statement&lt;/li&gt;
+  &lt;li&gt;Stakeholders and users&lt;/li&gt;
+  &lt;li&gt;Data gathering&lt;/li&gt;
+  &lt;li&gt;Personas&lt;/li&gt;
+  &lt;li&gt;Scenarios&lt;/li&gt;
+  &lt;li&gt;Diagrammatic Techniques&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
+        <link>http://localhost:4000/notes/2019/09/10/comp3511-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/comp3511-notes.html</guid>
+        
+        
+        <category>notes</category>
+        
+        <category>Notes</category>
+        
+      </item>
+    
+      <item>
+        <title>MMAN2130</title>
         <description>&lt;h1 id=&quot;mman2130-notes&quot;&gt;MMAN2130 Notes&lt;/h1&gt;
 
 &lt;h2 id=&quot;project-specification&quot;&gt;Project Specification&lt;/h2&gt;
@@ -27,18 +487,20 @@ The pump will consist of 5 major componenents:&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
-        <link>https://tatsislam.github.io//notes/2019/09/10/mman2130-notes.html</link>
-        <guid isPermaLink="true">https://tatsislam.github.io//notes/2019/09/10/mman2130-notes.html</guid>
+        <link>http://localhost:4000/notes/2019/09/10/mman2130-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/mman2130-notes.html</guid>
         
         
         <category>notes</category>
         
+        <category>Notes</category>
+        
       </item>
     
       <item>
-        <title>ENGG2400 - Mechanics of Solids</title>
+        <title>ENGG2400</title>
         <description>&lt;h1 id=&quot;engg2400---mechanics-of-solids&quot;&gt;ENGG2400 - Mechanics of Solids&lt;/h1&gt;
-&lt;h2 id=&quot;week1&quot;&gt;1. &lt;strong&gt;Week 1 - Stress and Strain&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;1-stress-and-strain&quot;&gt;1. &lt;strong&gt;Stress and Strain&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;h3 id=&quot;11-stress&quot;&gt;1.1 &lt;strong&gt;Stress&lt;/strong&gt;&lt;/h3&gt;
 
@@ -132,9 +594,9 @@ As a part of this course, definitions are based on infinitesimal displacements a
 
 &lt;p&gt;Due to the fact that direct measurement of strain is much easier than measuring stress, through the use of material properties we develop a relationship between stress and strain. This content is covered in Week 3 content&lt;/p&gt;
 
-&lt;h2 id=&quot;131&quot;&gt;1.3.1&lt;/h2&gt;
+&lt;h4 id=&quot;131&quot;&gt;1.3.1&lt;/h4&gt;
 
-&lt;h2 id=&quot;2-week-2---mechanical-properties&quot;&gt;2. &lt;strong&gt;Week 2 - Mechanical Properties&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;2-mechanical-properties&quot;&gt;2. &lt;strong&gt;Mechanical Properties&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;h3 id=&quot;21-stress-vs-strain-diagrams&quot;&gt;2.1 &lt;strong&gt;Stress vs Strain Diagrams&lt;/strong&gt;&lt;/h3&gt;
 
@@ -153,25 +615,27 @@ As a part of this course, definitions are based on infinitesimal displacements a
 
 &lt;h3 id=&quot;23&quot;&gt;2.3&lt;/h3&gt;
 
-&lt;h2 id=&quot;3-week-3---axial-loading&quot;&gt;3. &lt;strong&gt;Week 3 - Axial Loading&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;3-axial-loading&quot;&gt;3. &lt;strong&gt;Axial Loading&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;h2 id=&quot;4-week-4---torsion&quot;&gt;4. &lt;strong&gt;Week 4 - Torsion&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;4-torsion&quot;&gt;4. &lt;strong&gt;Torsion&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;h2 id=&quot;5-week-5---beam-bending&quot;&gt;5. &lt;strong&gt;Week 5 - Beam Bending&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;5-beam-bending&quot;&gt;5. &lt;strong&gt;Beam Bending&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;h2 id=&quot;6-week-6---transverse-shear&quot;&gt;6. &lt;strong&gt;Week 6 - Transverse Shear&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;6-transverse-shear&quot;&gt;6. &lt;strong&gt;Transverse Shear&lt;/strong&gt;&lt;/h2&gt;
 </description>
         <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
-        <link>https://tatsislam.github.io//notes/2019/09/10/engg2400-notes.html</link>
-        <guid isPermaLink="true">https://tatsislam.github.io//notes/2019/09/10/engg2400-notes.html</guid>
+        <link>http://localhost:4000/notes/2019/09/10/engg2400-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/engg2400-notes.html</guid>
         
         
         <category>notes</category>
         
+        <category>Notes</category>
+        
       </item>
     
       <item>
-        <title>COMP2511 - Object Oriented Design</title>
+        <title>COMP2511</title>
         <description>&lt;h1 id=&quot;comp2511-notes&quot;&gt;&lt;strong&gt;COMP2511 Notes&lt;/strong&gt;&lt;/h1&gt;
 
 &lt;h2 id=&quot;1-object-oriented-introduction&quot;&gt;1. &lt;strong&gt;Object Oriented Introduction&lt;/strong&gt;&lt;/h2&gt;
@@ -260,7 +724,7 @@ Interfaces can also be extended by &lt;strong&gt;sub-interfaces&lt;/strong&gt;. 
 &lt;p&gt;A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass. This allows us to treat a family of subclasses as the parent class, while the subclasses still retain their individual behaviour. However we can only access methods that are specified or inherted from the superclass, access to the subclasses individual methods are restricted.&lt;/p&gt;
 
 &lt;h3 id=&quot;15-generics&quot;&gt;1.5 &lt;strong&gt;Generics&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;TBC&lt;/p&gt;
+&lt;p&gt;Generics enable &lt;em&gt;types&lt;/em&gt; (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar &lt;em&gt;formal parameters&lt;/em&gt; used in method declarations, type parameters prove&lt;/p&gt;
 
 &lt;h2 id=&quot;2-object-oriented-design-principles&quot;&gt;2. &lt;strong&gt;Object Oriented Design Principles&lt;/strong&gt;&lt;/h2&gt;
 
@@ -491,28 +955,95 @@ Interfaces can also be extended by &lt;strong&gt;sub-interfaces&lt;/strong&gt;. 
 
 &lt;h4 id=&quot;321-problem&quot;&gt;3.2.1 &lt;strong&gt;Problem&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;When we have an object that needs to change its behaviour based on its current state. If we need to continue to add behaviours and states to the class, the class can become too large or have too many responsibilities, especially if the behaviours are unrelated.&lt;/p&gt;
+&lt;p&gt;When we have an object that needs to change its behaviour based on its current state. If we need to continue to add behaviours and states to the class, the class can become too large or have too many responsibilities, especially if the behaviours are unrelated. States can also be “easily” managed with switch-case statements (which are terrible terrible design), and we should refactor switch statements to state patterns.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// One class to manage all state logic in a switch statement&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// low speed state logic&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// high speed state logic&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// off state logic&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;322-solution&quot;&gt;3.2.2 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;We can extract the behaviours and states into separate classes which can be better organised and prevent us from making large classes&lt;/p&gt;
+&lt;p&gt;We can extract the behaviours and states into separate classes which can be better organised and prevent us from making large classes. The below example is too simplistic to actually be useful for the state pattern, however it demonstrates how each state is decoupled from the user class and from each other.&lt;/p&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BatteryMode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CelingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    
+&lt;span class=&quot;c1&quot;&gt;// Wrapper class that delegates state logic to composed state objects&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;set_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Concrete state classses&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LowSpeedState&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// low speed logic&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HighSpeedState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HighSpeedState&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// high speed logic&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OffState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Offtate&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CeilingFanPullChain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Off logic&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LowSpeedState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;33-iterator-pattern&quot;&gt;3.3 &lt;strong&gt;Iterator Pattern&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The iterator pattern allows for the traversal of items in a collection without revealing any internal data structures. Probably don’t have to worry too much about this one as both Java and C++ handle this one for us most of the time.&lt;/p&gt;
+
+&lt;h3 id=&quot;34-template-method-patter&quot;&gt;3.4 &lt;strong&gt;Template Method Patter&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;341-problem&quot;&gt;3.4.1 &lt;strong&gt;Problem&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Basically if we wanna do something similar to C’s function pointer magic but in a more sensible and coherent manner. How can we switch out steps in the execution of a algorithm depending on what our needs.&lt;/p&gt;
+
+&lt;h4 id=&quot;342-solution&quot;&gt;3.4.2 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;You may have noticed by now, our solution to each problem is simply to add more complex class structures into the system, just assume that that’s the case for the rest of these, because my exam is tomorrow and I am struggling to catch up.&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Sep 2019 02:20:27 +1000</pubDate>
-        <link>https://tatsislam.github.io//notes/2019/09/10/comp2511-notes.html</link>
-        <guid isPermaLink="true">https://tatsislam.github.io//notes/2019/09/10/comp2511-notes.html</guid>
+        <link>http://localhost:4000/notes/2019/09/10/comp2511-notes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/notes/2019/09/10/comp2511-notes.html</guid>
         
         
         <category>notes</category>
+        
+        <category>Notes</category>
         
       </item>
     

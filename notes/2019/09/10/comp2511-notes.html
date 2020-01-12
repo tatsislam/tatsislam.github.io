@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>COMP2511 - Object Oriented Design</title>
+  <title>COMP2511</title>
   <meta name="description" content="COMP2511 Notes1. Object Oriented Introduction1.1 JavaJava is a multiplatform development tool that is developed by Oracle. Some important features of the Jav...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://tatsislam.github.io//notes/2019/09/10/comp2511-notes.html">
-  <link rel="alternate" type="application/rss+xml" title="tatsislam.github.io" href="https://tatsislam.github.io//feed.xml">
+  <link rel="canonical" href="http://localhost:4000/notes/2019/09/10/comp2511-notes.html">
+  <link rel="alternate" type="application/rss+xml" title="tatsislam.github.io" href="http://localhost:4000/feed.xml">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -65,6 +65,9 @@
 
     <div class="page-content">
       <div class="wrapper">
+        <div class="sidenav" id="sidenav">
+          <a>Contents</a>
+        </div>
         <h1 id="comp2511-notes"><strong>COMP2511 Notes</strong></h1>
 
 <h2 id="1-object-oriented-introduction">1. <strong>Object Oriented Introduction</strong></h2>
@@ -153,7 +156,7 @@ Interfaces can also be extended by <strong>sub-interfaces</strong>. A sub-interf
 <p>A subclass can also be cast into the type of its superclass, and hence the subclass can pass an “is-a” test for the superclass. This allows us to treat a family of subclasses as the parent class, while the subclasses still retain their individual behaviour. However we can only access methods that are specified or inherted from the superclass, access to the subclasses individual methods are restricted.</p>
 
 <h3 id="15-generics">1.5 <strong>Generics</strong></h3>
-<p>TBC</p>
+<p>Generics enable <em>types</em> (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar <em>formal parameters</em> used in method declarations, type parameters prove</p>
 
 <h2 id="2-object-oriented-design-principles">2. <strong>Object Oriented Design Principles</strong></h2>
 
@@ -384,25 +387,90 @@ Interfaces can also be extended by <strong>sub-interfaces</strong>. A sub-interf
 
 <h4 id="321-problem">3.2.1 <strong>Problem</strong></h4>
 
-<p>When we have an object that needs to change its behaviour based on its current state. If we need to continue to add behaviours and states to the class, the class can become too large or have too many responsibilities, especially if the behaviours are unrelated.</p>
+<p>When we have an object that needs to change its behaviour based on its current state. If we need to continue to add behaviours and states to the class, the class can become too large or have too many responsibilities, especially if the behaviours are unrelated. States can also be “easily” managed with switch-case statements (which are terrible terrible design), and we should refactor switch statements to state patterns.</p>
 
-<h4 id="322-solution">3.2.2 <strong>Solution</strong></h4>
-
-<p>We can extract the behaviours and states into separate classes which can be better organised and prevent us from making large classes</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BatteryMode</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="n">State</span> <span class="n">state</span><span class="o">;</span>
-
-<span class="o">}</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">State</span> <span class="o">{</span>
-    
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// One class to manage all state logic in a switch statement</span>
+<span class="kd">class</span> <span class="nc">CeilingFanPullChain</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">currentState</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pull</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">switch</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">currentState</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+                <span class="c1">// low speed state logic</span>
+                <span class="k">this</span><span class="o">.</span><span class="na">currentState</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+                <span class="c1">// high speed state logic</span>
+                <span class="k">this</span><span class="o">.</span><span class="na">currentState</span> <span class="o">=</span> <span class="mi">2</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+                <span class="c1">// off state logic</span>
+                <span class="k">this</span><span class="o">.</span><span class="na">currentState</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
 
+<h4 id="322-solution">3.2.2 <strong>Solution</strong></h4>
+
+<p>We can extract the behaviours and states into separate classes which can be better organised and prevent us from making large classes. The below example is too simplistic to actually be useful for the state pattern, however it demonstrates how each state is decoupled from the user class and from each other.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">State</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">pull</span><span class="o">(</span><span class="n">CelingFanPullChain</span> <span class="n">wrapper</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="c1">// Wrapper class that delegates state logic to composed state objects</span>
+<span class="kd">class</span> <span class="nc">CeilingFanPullChain</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">State</span> <span class="n">currentState</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">set_state</span> <span class="o">(</span><span class="n">State</span> <span class="n">newState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">currentState</span> <span class="o">=</span> <span class="n">newState</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pull</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">currentState</span><span class="o">.</span><span class="na">pull</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="c1">// Concrete state classses</span>
+<span class="kd">class</span> <span class="nc">LowSpeedState</span> <span class="kd">implements</span> <span class="n">State</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pull</span><span class="o">(</span><span class="n">CeilingFanPullChain</span> <span class="n">wrapper</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// low speed logic</span>
+        <span class="n">wrapper</span><span class="o">.</span><span class="na">setState</span><span class="o">(</span><span class="k">new</span> <span class="n">HighSpeedState</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">HighSpeedState</span> <span class="kd">implements</span> <span class="n">State</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pull</span><span class="o">(</span><span class="n">CeilingFanPullChain</span> <span class="n">wrapper</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// high speed logic</span>
+        <span class="n">wrapper</span><span class="o">.</span><span class="na">setState</span><span class="o">(</span><span class="k">new</span> <span class="n">OffState</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Offtate</span> <span class="kd">implements</span> <span class="n">State</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">pull</span><span class="o">(</span><span class="n">CeilingFanPullChain</span> <span class="n">wrapper</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Off logic</span>
+        <span class="n">wrapper</span><span class="o">.</span><span class="na">setState</span><span class="o">(</span><span class="k">new</span> <span class="n">LowSpeedState</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="33-iterator-pattern">3.3 <strong>Iterator Pattern</strong></h3>
+
+<p>The iterator pattern allows for the traversal of items in a collection without revealing any internal data structures. Probably don’t have to worry too much about this one as both Java and C++ handle this one for us most of the time.</p>
+
+<h3 id="34-template-method-patter">3.4 <strong>Template Method Patter</strong></h3>
+
+<h4 id="341-problem">3.4.1 <strong>Problem</strong></h4>
+<p>Basically if we wanna do something similar to C’s function pointer magic but in a more sensible and coherent manner. How can we switch out steps in the execution of a algorithm depending on what our needs.</p>
+
+<h4 id="342-solution">3.4.2 <strong>Solution</strong></h4>
+
+<p>You may have noticed by now, our solution to each problem is simply to add more complex class structures into the system, just assume that that’s the case for the rest of these, because my exam is tomorrow and I am struggling to catch up.</p>
+
       </div>
     </div>
-
+    <script src="/js/contents.js"></script>
     <footer class="site-footer">
 
   <div class="wrapper">
