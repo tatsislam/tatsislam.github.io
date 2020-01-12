@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>COMP3511 - Notes</title>
+  <meta name="description" content="COMP3511 - Human Computer InteractionHuman Computer Interaction is all about understanding the design, implementation and evaluation of interactive systems t...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/notes/2020/01/06/comp3511-notes.html">
+  <link rel="alternate" type="application/rss+xml" title="tatsislam.github.io" href="http://localhost:4000/feed.xml">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">tatsislam.github.io</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <a class="page-link" href="/">Home</a>
+        
+          
+          <a class="page-link" href="/about/">About Me</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="sidenav" id="sidenav">
+          <a>Contents</a>
+        </div>
+        <h1 id="comp3511---human-computer-interaction"><strong>COMP3511 - Human Computer Interaction</strong></h1>
+
+<p>Human Computer Interaction is all about understanding the design, implementation and evaluation of interactive systems that considers the users at every stage of the process.</p>
+
+<hr />
+
+<h2 id="1-framework-for-evaluation">1. <strong>Framework for Evaluation</strong></h2>
+
+<p>This topic covers all the elements you should consider in analysing and evalutating and interface or design.</p>
+
+<h3 id="11-some-basic-ideas">1.1. <strong>Some basic ideas</strong></h3>
+
+<h4 id="goals-and-tasks"><strong>Goals and Tasks</strong></h4>
+
+<p>To evaluate an interface, we must think of what <em>goals</em> a user wants to achieve. In order to achieve these goals users may have to carry out <em>tasks</em> (steps) to reach the goal.</p>
+
+<h4 id="what-is-interaction-design"><strong>What is interaction design</strong></h4>
+<p>Interaction design is all about making <em>usable</em> products. Usable here means:</p>
+<ul>
+  <li>Easy to learn</li>
+  <li>Effective to use</li>
+  <li>Provides an enjoyable experience
+We also aim to optimise user interaction with the system or product so that they support and extend the user’s activities in effective useful and usable ways</li>
+</ul>
+
+<p>The process of interaction design follows the same process of any design development:</p>
+<ul>
+  <li>Establishing requirements</li>
+  <li>Developing alternatives</li>
+  <li>Prototyping</li>
+  <li>Evaluating
+With the steps repeated enough times as necessary until the design meets the requirements set.</li>
+</ul>
+
+<h3 id="12-usability-goals">1.2. <strong>Usability Goals</strong></h3>
+
+<p>These are what you should check in terms of usability for an interface:</p>
+
+<ul>
+  <li>Effective
+    <ul>
+      <li>How well does a product do what it’s supposed to do?</li>
+      <li>Does it help people achieve their goals?</li>
+    </ul>
+  </li>
+  <li>Efficiency
+    <ul>
+      <li>Does it help people achieve their goals with minimal steps?</li>
+      <li>Does it have unnecessary tasks that are more “system related” rather than through a natural method?</li>
+    </ul>
+  </li>
+  <li>Safety
+    <ul>
+      <li>Doesn’t kill or injure people</li>
+      <li>Helps avoid mistakes</li>
+      <li>Doesn’t delete important information</li>
+      <li>Undo provided</li>
+    </ul>
+  </li>
+  <li>Utility
+    <ul>
+      <li>Does the product have all the functions that the user needs to achieve the goals?</li>
+    </ul>
+  </li>
+  <li>Learnability
+    <ul>
+      <li>Is the system easy to use?</li>
+      <li>Can the user start using it with minimal confusion / cognitive load</li>
+      <li>Doesn’t take long to be productive</li>
+      <li>Similar tasks have similar interactions</li>
+    </ul>
+  </li>
+  <li>Memorability
+    <ul>
+      <li>Is it easy to forget how to use the system?</li>
+      <li>How often do people use the system?</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="13-design-principles">1.3. <strong>Design principles</strong></h3>
+<p>Design principles are generalizable abstractions for thinking about different aspects and elements of design.</p>
+
+<ul>
+  <li>Visibility
+    <ul>
+      <li>Helps the user understand what to do with the system</li>
+      <li>The visual design provides clues about how to interact with the system</li>
+    </ul>
+  </li>
+  <li>Feedback
+    <ul>
+      <li>The way the system reacts to the user input, sending a <em>signal</em> back to the user</li>
+      <li>Can be visual or auditory</li>
+    </ul>
+  </li>
+  <li>Constraints
+    <ul>
+      <li>Physical
+        <ul>
+          <li>Keys can only be inserted in a specific orientation</li>
+        </ul>
+      </li>
+      <li>Semantic
+        <ul>
+          <li>Some things just make sense, and some things don’t</li>
+          <li>Requires that we have knowledge of the real world and can translate those relations to the system</li>
+        </ul>
+      </li>
+      <li>Cultural
+        <ul>
+          <li>Socically acceptable behaviour in one society could differ from another society</li>
+          <li>localised products might work in a particular way</li>
+        </ul>
+      </li>
+      <li>Logical
+        <ul>
+          <li>exploits people’s everyday common sense and logical reasoning</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Natural mappings
+    <ul>
+      <li>Spatial relationship between controls and the outcome</li>
+      <li>Layout and physical design</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="14-usability-principles-heuristics">1.4. <strong>Usability Principles (Heuristics)</strong></h3>
+<ul>
+  <li>Visibility of system status
+    <ul>
+      <li>To do with feedback</li>
+      <li>Keep the user informed</li>
+      <li>Show what the system is doing</li>
+    </ul>
+  </li>
+  <li>Match between system and the real world
+    <ul>
+      <li>Avoid system-oriented jargon</li>
+      <li>Familiar concepts to the user</li>
+    </ul>
+  </li>
+  <li>User control and freedom
+    <ul>
+      <li>Actions are not taking place in unpredictable, automatic ways</li>
+      <li>The user needs to be in control as much of possibles</li>
+    </ul>
+  </li>
+  <li>Consistency and standards
+    <ul>
+      <li>Helps users understand what could do since they can build knowledge they have acquired elsewhere</li>
+      <li>Actions or sequences of actions are conducted in the same manner</li>
+    </ul>
+  </li>
+  <li>Help and Documentation
+    <ul>
+      <li>Information that can be easily accessed and searched</li>
+    </ul>
+  </li>
+  <li>Help users recognise, diagnose and recover from errors
+    <ul>
+      <li>Error messages are presented using plain language that the user can understand</li>
+      <li>The error is described and a solution is presented</li>
+    </ul>
+  </li>
+  <li>Error prevention
+    <ul>
+      <li>Stop errors from occurring in the first place</li>
+      <li>Providing clear labelling or meaningful terminology</li>
+    </ul>
+  </li>
+  <li>Recognition rather than recall
+    <ul>
+      <li>Relying on being able to easily recognise options</li>
+      <li>Not relying on memorisation of sequences, commands and ideas</li>
+    </ul>
+  </li>
+  <li>Flexibility and efficiency of use
+    <ul>
+      <li>Experienced users want to carry out their tasks efficiently</li>
+      <li>Provide alternative ways/paths to cater for both experienced and inexperienced users</li>
+      <li>Accelerators not visibile to the novice user but provide efficiency for the expert</li>
+    </ul>
+  </li>
+  <li>Aesthetic and minimalist design
+    <ul>
+      <li>Avoid providing information that is irrelevant or rarely needed.</li>
+      <li>Reduce the number of steps needed to achieve important goals</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="15-user-experience-ux">1.5. <strong>User Experience (UX)</strong></h3>
+<p>User experience is all about the <em>v i b e</em></p>
+
+<h3 id="16-think-aloud-protocol">1.6. <strong>Think aloud protocol</strong></h3>
+<p>The think aloud protocol is an observation technique used to evaluate an interface by verbalising the thoughts a user has as they interact with the interface.
+The aim is to gather a lot of user comments about the interactions and understand where the good interactions happen and where the pain points are.</p>
+
+<hr />
+
+<h2 id="2-design-process-idea-to-scenarios">2. <strong>Design Process: Idea to Scenarios</strong></h2>
+
+<p>This topic covers the process of going from an idea to getting ready to build your first prototype</p>
+
+<h3 id="21-product-description-statement">2.1. <strong>Product Description Statement</strong></h3>
+<p>The product description statment is a short summary that describes what the product will do to meeet the user goals. It should be around 30 words or less. For example:</p>
+<blockquote>
+  <p>This app aims to allow students to write notes for their classes in a “gamified” way to encourage good study habits.</p>
+</blockquote>
+
+<p>The aim of the product description statement is to condense the entire idea to a single or simplified focus, so that it can be relied on in the evaluation stages to see if the product meets the description.</p>
+<h3 id="22-stakeholders">2.2. <strong>Stakeholders</strong></h3>
+<p>There are a range of people involved in the process that can be referred to as stakeholders</p>
+<ul>
+  <li>Direct users (primary)
+    <ul>
+      <li>Usually the target audience for the interface</li>
+    </ul>
+  </li>
+  <li>Indirect users (secondary)
+    <ul>
+      <li>Those who manage direct users</li>
+      <li>Those who receive output from the product</li>
+    </ul>
+  </li>
+  <li>Other stakeholders (tertiary)</li>
+  <li>Don’t include facilitating stakeholders (Designers)</li>
+</ul>
+
+<h3 id="23-data-gathering">2.3. <strong>Data Gathering</strong></h3>
+
+<p>The point of data gathering is about knowing what users want, how they interact with existing systems, and understanding what changes or new features need to be developed.</p>
+
+<p>Data gathering is generally done through the following:</p>
+<ul>
+  <li>Questionnaires</li>
+  <li>Interviews</li>
+  <li>Focus groups and workshops</li>
+  <li>Naturalistic observation</li>
+  <li>Studying documentation</li>
+</ul>
+
+<h3 id="24-personas">2.4. <strong>Personas</strong></h3>
+
+<p>After you’ve gathered, organised and analysed your data you will gain and understanding of the user’s point of view. This will allow you to develop <em>personas</em>. There are two broad types of personas:</p>
+<ul>
+  <li>Marketing-targeted personas - that model purchase motivations</li>
+  <li>Interactive personas - that model usage behaviours</li>
+</ul>
+
+<p>Personas usually have a list of information to flesh out their character:</p>
+<ul>
+  <li>Personal
+    <ul>
+      <li>Name</li>
+      <li>Age</li>
+      <li>Gender</li>
+      <li>Photo</li>
+      <li>Ability/Disability</li>
+    </ul>
+  </li>
+  <li>Professional
+    <ul>
+      <li>Education</li>
+      <li>Professional background</li>
+    </ul>
+  </li>
+  <li>Technical
+    <ul>
+      <li>Goals</li>
+      <li>Computer literacy</li>
+      <li>Technology they use to access interface</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="25-scenarios">2.5. <strong>Scenarios</strong></h3>
+
+<p>A scenario is a contextual narrative based on the findings of your data gathering and analysis featuring your personas. These scenarios and goal-directed and should outline the tasks that the persona carries out as they achieve their goals.</p>
+
+<ul>
+  <li>Think aloud protocol</li>
+  <li>Product desicription statement</li>
+  <li>Stakeholders and users</li>
+  <li>Data gathering</li>
+  <li>Personas</li>
+  <li>Scenarios</li>
+  <li>Diagrammatic Techniques</li>
+</ul>
+
+      </div>
+    </div>
+    <script src="/js/contents.js"></script>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">tatsislam.github.io</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+
+        <ul class="contact-list">
+          <li>Tanvee Islam</li>
+          <li><a href="mailto:tatsislam@gmail.com">tatsislam@gmail.com</a></li>
+          
+          <li>
+            <a href="https://github.com/tatsislam"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">tatsislam</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list"> <!-- Friend list -->
+          <li>
+            My friends
+          </li>
+          
+          <li>
+              <a href="https://muhammadal-haary.github.io/"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">muhammadal-haary</span></a>
+
+          </li>
+          
+          
+          <li>
+              <a href="https://sharmkn.github.io/"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">sharmkn</span></a>
+
+          </li>
+          
+          
+          <li>
+              <a href="https://dang000.github.io/"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">dang000</span></a>
+
+          </li>
+           
+          
+          <li>
+              <a href="https://atude.github.io/"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">atude</span></a>
+
+          </li>
+           
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Mechatronic Engineering and Computer Science student at the University of New South Wales
+</p>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</footer>
+
+
+  </body>
+
+</html>
